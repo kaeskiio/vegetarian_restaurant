@@ -21,6 +21,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import tbb from '../assets/tbb.png';
+import header_image from '../assets/header_image.png'
 
 export default {
   bg,
@@ -46,4 +47,5 @@ export default {
   quote,
   gericht,
   tbb,
+  header_image,
 };
