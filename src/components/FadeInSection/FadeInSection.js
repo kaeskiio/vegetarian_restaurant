@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const FadeInSection = ({ children }) => {
+const FadeInSection = ({ children, translateXAmount=0, translateYAmount=0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -31,8 +31,8 @@ const FadeInSection = ({ children }) => {
       ref={sectionRef}
       style={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(30px)', //so the element shifts up as it fades in
-        transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+        transform: isVisible ? `translateY(0px) translateX(0px)` : `translateY(${translateYAmount}px) translateX(${translateXAmount}px)`, //so the element shifts up as it fades in
+        transition: 'opacity 1s ease-out, transform 1s ease-out',
       }}
     >
       {children}
