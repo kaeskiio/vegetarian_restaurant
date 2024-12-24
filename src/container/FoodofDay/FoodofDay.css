@@ -1,0 +1,88 @@
+.app__foodofday {
+    position: relative;
+}
+
+.app__foodofday-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.app__foodofday-overlay img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.app__foodofday-content {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__foodofday-content_today {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.app__foodofday-content_image {
+    margin: 2rem 4rem;
+}
+
+.app__foodofday-content_image img {
+    height: 500px;
+}
+
+.app__foodofday-content_details {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.app__foodofday-content_today p,
+.app__foodofday-content_details p {
+    margin: 2rem 0;
+    color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__foodofday-content_image img {
+        height: 650px;
+    }
+
+    .app__foodofday-content_today p,
+    .app__foodofday-content_details p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__foodofday-content {
+        flex-direction: column;
+    }
+
+    .app__foodofday-content_image {
+        margin: 4rem 0;
+    }
+
+    .app__foodofday-content_image img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__foodofday-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
