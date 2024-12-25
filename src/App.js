@@ -4,7 +4,7 @@ import { AboutUs, Chef, FindUs, FoodofDay, Footer, Gallery, Header, Intro, Laure
 import { Navbar } from './components';
 import './App.css';
 
-import Book from './pages/Book/Book'; // Make sure path is correct
+import Book from './pages/Book/Book'; 
 
 const App = () => {
   return (

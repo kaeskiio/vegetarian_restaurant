@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';  // Use Link for routing instead of anchor tags
+import { Link } from 'react-router-dom'; 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
@@ -21,8 +21,7 @@ const Navbar = () => {
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
       <div className="app__navbar-login">
-        {/* Link to login page */}
-        <a href="/"  className="p__opensans">Log In / Registration</a>
+        <a href="/" className="p__opensans">Log In / Registration</a>
         <div />
         <Link to="/book" className="p__opensans">Book Table</Link>
       </div>
@@ -31,14 +30,16 @@ const Navbar = () => {
         <GiHamburgerMenu
           color="#fff"
           fontSize={27}
-          onClick={() => setToggleMenu(true)} // Ensure this toggles the menu
+          onClick={() => {
+            setToggleMenu(true);
+          }}
         />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
-              onClick={() => setToggleMenu(false)} // Ensure the close button works
+              onClick={() => setToggleMenu(false)} 
             />
             <ul className="app__navbar-smallscreen_links">
               <li><a href="/#home" onClick={() => setToggleMenu(false)}>Home</a></li>
