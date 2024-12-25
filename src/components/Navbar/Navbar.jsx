@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Use Link for routing instead of anchor tags
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -19,15 +21,25 @@ const Navbar = () => {
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Log In / Registration</a>
+        {/* Link to login page */}
+        <a href="/"  className="p__opensans">Log In / Registration</a>
         <div />
-        <a href="/" className="p__opensans">Book Table</a>
+        <Link to="/book" className="p__opensans">Book Table</Link>
       </div>
+
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu
+          color="#fff"
+          fontSize={27}
+          onClick={() => setToggleMenu(true)} // Ensure this toggles the menu
+        />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
+            <MdOutlineRestaurantMenu
+              fontSize={27}
+              className="overlay__close"
+              onClick={() => setToggleMenu(false)} // Ensure the close button works
+            />
             <ul className="app__navbar-smallscreen_links">
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
               <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
