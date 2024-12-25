@@ -32,7 +32,7 @@ const FadeInSection = ({ children, translateXAmount=0, translateYAmount=0 }) => 
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? `translateY(0px) translateX(0px)` : `translateY(${translateYAmount}px) translateX(${translateXAmount}px)`, //so the element shifts up as it fades in
-        transition: 'opacity 1s ease-out, transform 1s ease-out',
+        transition: 'opacity 2s ease-out, transform 2s ease-out',
       }}
     >
       {children}
