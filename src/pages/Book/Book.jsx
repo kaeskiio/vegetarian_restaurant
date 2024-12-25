@@ -7,57 +7,50 @@ const Book = () => {
     phone: '',
     date: '',
     time: '',
-    guests: 1,
+    guests: 1
   });
+  
+  const [reservations, setReservations] = useState([]); // To store reservation data
 
-  const [reservations, setReservations] = useState([]);
-  const [errorMessage, setErrorMessage] = useState(''); 
-
+  // Load reservation data from sessionStorage on page load
   useEffect(() => {
-    const savedReservations = localStorage.getItem('reservations');
-    if (savedReservations) {
-      setReservations(JSON.parse(savedReservations));
+    const savedData = sessionStorage.getItem('reservations');
+    if (savedData) {
+      setReservations(JSON.parse(savedData));
     }
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('reservations', JSON.stringify(reservations));
-  }, [reservations]);
-
+  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: value
     });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const isTimeTaken = reservations.some(
-      (reservation) =>
-        reservation.date === formData.date && reservation.time === formData.time
-    );
+    // Save reservation to the state and sessionStorage
+    const newReservation = { ...formData };
+    const updatedReservations = [...reservations, newReservation];
+    
+    // Update reservations state
+    setReservations(updatedReservations);
+    
+    // Save the updated reservations array in sessionStorage
+    sessionStorage.setItem('reservations', JSON.stringify(updatedReservations));
 
-    if (isTimeTaken) {
-      setErrorMessage('Sorry, this time slot is already reserved. Please choose a different time.');
-    } else {
-      setErrorMessage('');
-
-      setReservations([
-        ...reservations,
-        { ...formData },
-      ]);
-
-      setFormData({
-        name: '',
-        phone: '',
-        date: '',
-        time: '',
-        guests: 1,
-      });
-    }
+    // Clear form data after submission
+    setFormData({
+      name: '',
+      phone: '',
+      date: '',
+      time: '',
+      guests: 1
+    });
   };
 
   return (
@@ -111,23 +104,25 @@ const Book = () => {
           />
           <button type="submit">Reserve Table</button>
         </form>
+      </div>
 
-        {}
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
-
-        {}
-        <div className="reservations-list">
-          {reservations.length > 0 && <h3>Reservations:</h3>}
-          {reservations.map((reservation, index) => (
-            <div key={index} className="reservation-box">
-              <h4>{reservation.name}</h4>
-              <p>Phone: {reservation.phone}</p>
-              <p>Date: {reservation.date}</p>
-              <p>Time: {reservation.time}</p>
-              <p>Guests: {reservation.guests}</p>
-            </div>
-          ))}
-        </div>
+      {/* Display reserved reservations */}
+      <div className="reservations-list">
+        {reservations.length > 0 && (
+          <div>
+            <h3>Current Reservations:</h3>
+            {reservations.map((reservation, index) => (
+              <div key={index} className="reservation-box">
+                <h4>Reservation {index + 1}</h4>
+                <p><strong>Name:</strong> {reservation.name}</p>
+                <p><strong>Phone:</strong> {reservation.phone}</p>
+                <p><strong>Date:</strong> {reservation.date}</p>
+                <p><strong>Time:</strong> {reservation.time}</p>
+                <p><strong>Guests:</strong> {reservation.guests}</p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

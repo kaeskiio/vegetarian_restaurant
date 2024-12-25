@@ -1,11 +1,12 @@
 body {
-    background-color: var(--color-black); 
-    color: var(--color-white); 
+    background-color: var(--color-black); /* Sets the background color of the entire page to black */
+    color: var(--color-white); /* Sets text color to white for contrast */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
+  /* Container for the booking form */
   .book-container {
     width: 100%;
     max-width: 500px;
@@ -16,17 +17,20 @@ body {
     border-radius: 8px;
   }
   
+  /* Styling the title */
   .book-container h2 {
     text-align: center;
     margin-bottom: 20px;
     color: var(--color-white);
   }
   
+  /* Styling the form */
   .book-container form {
     display: flex;
     flex-direction: column;
   }
   
+  /* Styling input fields */
   .book-container input {
     padding: 10px;
     margin-bottom: 10px;
@@ -37,6 +41,7 @@ body {
     background-color: var(--color-white);
   }
   
+  /* Styling the submit button */
   .book-container button {
     padding: 10px;
     background-color: var(--color-gray);
@@ -47,10 +52,12 @@ body {
     cursor: pointer;
   }
   
+  /* Hover effect for button */
   .book-container button:hover {
     background-color: var(--color-gray);
   }
   
+  /* Styling for the list of reservations */
   .reservations-list {
     margin-top: 20px;
     color: var(--color-white);
