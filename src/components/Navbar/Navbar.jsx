@@ -4,7 +4,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
-import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
