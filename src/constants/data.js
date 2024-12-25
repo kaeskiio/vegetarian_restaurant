@@ -2,58 +2,68 @@ import images from './images';
 
 const wines = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Café au Lait',
+    price: '$15',
+    tags: 'A French classic, featuring rich espresso and velvety steamed milk',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Affogato al Caffè',
+    price: '$12',
+    tags: 'A decadent dessert-style coffee, with a scoop of vanilla gelato immersed in a shot of hot, bold espresso',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'Viennese Coffee',
+    price: '$11',
+    tags: 'A refined black coffee topped with whipped cream, elegantly presented with a hint of chocolate or cinnamon',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    title: 'Dragonwell Green Tea',
+    price: '$10',
+    tags: 'Premium Chinese green tea with a gentle, grassy flavor and light, refreshing aftertaste',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: 'Tie Guan Yin Oolong',
+    price: '$12',
+    tags: 'Our take on the classic chinese oolong with a fragrant, creamy texture and a complex, floral flavor profile',
+  },
+  {
+    title: 'Darjeeling First Flush',
+    price: '$16',
+    tags: 'Black tea with a floral bouquet and light astringency',
   },
 ];
 
 const cocktails = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: 'Shirley Temple',
+    price: '$15',
+    tags: 'A refreshing blend of ginger ale and grenadine, topped with a maraschino cherry',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: "Virgin Pina Colada",
+    price: '$12',
+    tags: 'Coconut cream and fresh pineapple juiced, garnished with a slice of pineapple',
   },
   {
-    title: 'Daiquiri',
+    title: 'Mango Mule',
     price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    tags: 'Ripe mango accomplanied by zesty notes of alcohol-free ginger beer',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Rasberry Lime Rickey',
+    price: '10',
+    tags: 'Freshly picked rasberries mixed with lime juice and soda water',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: 'Saffron Lemon Iced Tea',
+    price: '$13',
+    tags: 'Saffron infused iced tea with a lemon twist',
   },
+  {
+    title: 'Citrus Berry Spritzer',
+    price: '$12',
+    tags: 'A vibrant mix of muddled strawberries, raspberries, and orange slices, topped with lemon-lime soda.',
+  }
 ];
 
 const awards = [

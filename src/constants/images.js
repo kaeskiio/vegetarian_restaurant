@@ -21,7 +21,8 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import tbb from '../assets/tbb.png';
-import header_image from '../assets/header_image.png'
+import header_image from '../assets/header_image.png';
+import negroni from '../assets/negroni.png';
 
 export default {
   bg,
@@ -48,4 +49,5 @@ export default {
   gericht,
   tbb,
   header_image,
+  negroni,
 };
