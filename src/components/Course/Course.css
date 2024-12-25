@@ -1,0 +1,21 @@
+.app__Course{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__Course-Head{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.app__Course-Name{
+    flex:1;
+}
+
+.app__Course_Description{
+    width: 100%;
+    margin-top: 0.2rem;
+}
