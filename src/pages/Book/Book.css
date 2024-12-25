@@ -1,0 +1,81 @@
+body {
+    background-color: var(--color-black); 
+    color: var(--color-white); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .book-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .book-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-white);
+  }
+  
+  .book-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--color-grey);
+    background-color: var(--color-white);
+  }
+  
+  .book-container button {
+    padding: 10px;
+    background-color: var(--color-gray);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .book-container button:hover {
+    background-color: var(--color-gray);
+  }
+  
+  .reservations-list {
+    margin-top: 20px;
+    color: var(--color-white);
+  }
+  
+  .reservation-box {
+    background-color: var(--color-black);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-white);
+  }
+  
+  .reservation-box h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .reservation-box p {
+    margin: 5px 0;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
