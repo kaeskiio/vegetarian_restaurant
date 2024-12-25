@@ -51,7 +51,7 @@ const cocktails = [
   },
   {
     title: 'Rasberry Lime Rickey',
-    price: '10',
+    price: '$10',
     tags: 'Freshly picked rasberries mixed with lime juice and soda water',
   },
   {
@@ -89,4 +89,56 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+const FullMenu = [
+  {
+    name: "Amuse-Bouche: Tomato Consommé Sphere",
+    description: "A clear tomato consommé encapsulated in a delicate gel sphere, served with a micro basil leaf and a hint of smoked sea salt.",
+  },
+  {
+    name: "First Course: Heirloom Beet Tartare",
+    description: "Finely diced heirloom beets, dressed with a mustard vinaigrette, topped with a quail egg mimosa made from vegan ingredients, and served with crispy sourdough shards.",
+  },
+  {
+    name: "Second Course: Asparagus and Edamame Salad",
+    description: "Tender asparagus tips and edamame, tossed in a yuzu dressing, garnished with sesame seeds and edible flowers.",
+  },
+  {
+    name: "Third Course: Truffled Cauliflower Velouté",
+    description: "Silky cauliflower soup infused with black truffle oil, garnished with pickled cauliflower florets and chive oil.",
+  },
+  {
+    name: "Fourth Course: Charred Carrot Ravioli",
+    description: "Handmade carrot-stuffed ravioli served in a carrot-ginger beurre blanc, topped with crispy carrot tops.",
+  },
+  {
+    name: "Fifth Course: Wild Mushroom and Polenta",
+    description: "Creamy truffle polenta topped with sautéed wild mushrooms, crispy shallots, and a drizzle of thyme jus.",
+  },
+  {
+    name: "Sixth Course: Smoked Eggplant Mille-Feuille",
+    description: "Thin layers of smoked eggplant and zucchini, stacked with cashew ricotta and sundried tomato pesto, finished with a balsamic glaze.",
+  },
+  {
+    name: "Seventh Course: Palate Cleanser – Cucumber Lime Granita",
+    description: "A refreshing granita made from cucumber juice, lime, and a hint of mint, served in a chilled martini glass.",
+  },
+  {
+    name: "Eighth Course: Sweetcorn Risotto",
+    description: "Creamy sweetcorn risotto with charred corn kernels, parmesan crisps, and a hint of chili oil.",
+  },
+  {
+    name: "Ninth Course: Stuffed Squash Blossom",
+    description: "Delicate squash blossoms filled with herbed ricotta and lightly fried, served with a tomato coulis and a drizzle of basil oil.",
+  },
+  {
+    name: "Tenth Course: Roasted Baby Vegetables",
+    description: "A medley of roasted baby vegetables (carrots, parsnips, and turnips), glazed with miso butter and topped with puffed quinoa for crunch.",
+  },
+  {
+    name: "Dessert: Chocolate Avocado Mousse",
+    description: "A velvety avocado-based chocolate mousse served with a hazelnut crumble, passionfruit gel, and gold leaf garnish.",
+  },
+];
+
+
+export default { wines, cocktails, awards, FullMenu };

@@ -1,20 +1,27 @@
-import React from 'react'
+import React from 'react';
+
 import {SubHeading, MenuItem } from '../../components'
+import { images, data } from '../../constants';
 import './TastingMenu.css';
-import {images, data} from '../../constants';
+import FadeInSection from '../../components/FadeInSection/FadeInSection';
+import Course from '../../components/Course/Course';
 
-const TastingMenu = () => {
-  <div className = ".app__tastingmenu flex__center section__padding" id = "tastingmenu">
-    <div className = ".app__tastingmenu-chef">
-      <div classnName = ".app__tastingmenu-title">
-        <h1 className="headtext__cormorant">Chef's Tasting Menu</h1>
-        <SubHeading>Made with fresh ingredients from the farm</SubHeading>
-      </div>
-      <div className=".app__tastingmenu-">
-
+const TastingMenu = () => (
+  <div className = "app__TastingMenu flex__center section__padding" id = "tastingmenu">
+    <FadeInSection>
+    <div className = "app__TastingMenu-title">
+      <h1 className ="headtext__cormorant">Daily Menu</h1>
+    </div>
+    <div className = "app__TastingMenu-menu">
+      <SubHeading title="Today's Selection"></SubHeading>
+      <div className="app__TastingMenu-courseitems">
+        {data.FullMenu.map((item, index) => (
+          <Course key = {item.name +index} title={item.name} description = {item.description}/>
+        ))}
       </div>
     </div>
+    </FadeInSection>
   </div>
-};
+);
 
 export default TastingMenu;
