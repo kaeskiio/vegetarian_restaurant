@@ -4,18 +4,18 @@ import { AboutUs, Chef, FindUs, FoodofDay, Footer, Gallery, Header, Intro, Laure
 import { Navbar } from './components';
 import './App.css';
 
-import Book from './pages/Book/Book'; // Make sure path is correct
+import Book from './pages/Book/Book'; 
 
 const App = () => {
   return (
     <Router>
       <div>
-        {/* The Navbar is always visible */}
+        {}
         <Navbar />
         
-        {/* Define routes */}
+        {}
         <Routes>
-          {/* Default Route for everything except login */}
+          {}
           <Route path="/" element={
             <>
               <Header />
@@ -31,7 +31,7 @@ const App = () => {
             </>
           } />
 
-          {/* Book Route */}
+          {}
           <Route path="/book" element={<Book />} />
         </Routes>
       </div>
