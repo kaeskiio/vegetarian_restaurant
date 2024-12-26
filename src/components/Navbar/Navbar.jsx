@@ -58,9 +58,7 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li><Link to="/" onClick={() => setToggleMenu(false)}>Home</Link></li>
-              <li>
-                <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('farm'); }}>About</Link>
-              </li>
+              <li><Link to="/farm" onClick={() => setToggleMenu(false)}>About</Link></li>
               <li><Link to="/menu" onClick={() => setToggleMenu(false)}>Menu</Link></li>
               <li>
                 <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('awards'); }}>Awards</Link>
@@ -69,6 +67,11 @@ const Navbar = () => {
                 <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('contact'); }}>Contact</Link>
               </li>
             </ul>
+            {}
+            <div className="app__navbar-smallscreen_footer">
+              <Link to="/" className="p__cormorant" onClick={() => setToggleMenu(false)}>Log In</Link>
+              <Link to="/book" className="p__cormorant" onClick={() => setToggleMenu(false)}>Book a Table</Link>
+            </div>
           </div>
         )}
       </div>
