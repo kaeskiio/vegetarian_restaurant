@@ -1,10 +1,15 @@
 import React from 'react';
+import { SubHeading } from '../../components';
+
 import './Farm.css';
 
 const Farm = () => {
   return (
     <div className="app__farm">
-      <h1 className="app__farm-title">Our Farm-to-Table Journey</h1>
+      <div className='app__farm-header'>
+        <SubHeading title="Harmony in every sustainable choice" />
+        <h1 className="app__farm-title">Our Farm-to-Table Journey</h1>
+      </div>
       <p className="app__farm-subtitle">
         Black basil's story is one of passion, sustainability, and a shared vision. Here's how it reaches your table.
       </p>

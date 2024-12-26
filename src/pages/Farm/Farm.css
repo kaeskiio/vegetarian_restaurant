@@ -6,12 +6,15 @@
     overflow-x: hidden;
   }
   
+  .app__farm-header {
+    text-align: center;
+  }
   .app__farm-title {
     font-size: 50px;
     text-align: center;
     margin-bottom: 1.5rem;
     letter-spacing: 0.05em;
-    color: var(--color-white);
+    color: var(--color-golden);
   }
   
   .app__farm-subtitle {

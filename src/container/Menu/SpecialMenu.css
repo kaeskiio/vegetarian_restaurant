@@ -10,7 +10,7 @@
 
 .app__specialMenu-menu {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -30,12 +30,10 @@
 .app__specialMenu-menu_wine{
     margin-left: 2rem;
     flex-direction: column;
-    width: 60%;
 }
 
 .app__specialMenu-menu_cocktails {
     margin-right: 2rem;
-    width: 40%;
     flex-direction: column;
 }
 
@@ -53,7 +51,6 @@
 .app__specialMenu_menu_items {
     display: flex;
     flex-direction: column;
-
     margin: 2rem 0;
     width: 100%;
 }
@@ -88,5 +85,10 @@
     .app__specialMenu-menu_heading {
         font-size: 35px;
         line-height: 48.5px;
+    }
+
+    .app__specialMenu-menu_wine{
+        margin-right: 2rem;
+        flex-direction: column;
     }
 }
