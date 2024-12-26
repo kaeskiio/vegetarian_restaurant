@@ -1,6 +1,6 @@
 
 import React, {useState, useEffect} from 'react';
-import { AboutUs, Chef, FindUs, FoodofDay, Footer, Gallery, Header, Intro, Laurels, SpecialMenu, TastingMenu } from './container';
+import { AboutUs, Chef, FindUs, FoodofDay, Footer, Gallery, Header, Intro, Laurels, SpecialMenu, TastingMenu, Team } from './container';
 import { Navbar } from './components';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -25,6 +25,7 @@ const App = () => {
         <Route path ="/menu" element = {<><SpecialMenu /> <TastingMenu/> <Footer/></>}></Route>
         <Route path="/book" element= {<><Book /> <Footer/></>}></Route>
         <Route path="/farm" element= {<><Farm /> <Footer/></>}></Route>
+        <Route path="/team" element= {<><Team/></>}></Route>
       </Routes>
     </Router>
   );

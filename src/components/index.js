@@ -5,6 +5,7 @@ import MenuItem from './Menuitem/MenuItem';
 import Navbar from './Navbar/Navbar';
 import FadeInSection from './FadeInSection/FadeInSection';
 import Course from './Course/Course';
+import TeamMember from './TeamMember/TeamMember';
 
 export {
   SubHeading,
@@ -14,4 +15,5 @@ export {
   Navbar,
   FadeInSection,
   Course,
+  TeamMember,
 };

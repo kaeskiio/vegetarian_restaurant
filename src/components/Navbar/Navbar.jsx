@@ -27,6 +27,7 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <li className="p__opensans"><Link to="/">Home</Link></li>
         <li className="p__opensans"><Link to="/farm">About</Link></li>
+        <li className="p__opensans"><Link to="/team">Our Team</Link></li>
         <li className="p__opensans"><Link to="/menu">Menu</Link></li>
         <li className="p__opensans">
           <Link to="/" onClick={(e) => { e.preventDefault(); handleScrollToSection('awards'); }}>Awards</Link>
