@@ -13,9 +13,9 @@ const Footer = () => (
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
-        <p className="p__opensans">11 Madison Avenue New York, NY 10010</p>
-        <p className="p__opensans">+1 212 678 7235</p>
-        <p className="p__opensans">+1 212 554 2789</p>
+        <p className="p__opensans">11850 Broadway Street, Pearland, TX 77584</p>
+        <p className="p__opensans">&nbsp;</p>
+        <p className="p__opensans">+1 281 245 3800</p>
       </div>
       <div className="app__footer-links_logo">
         <img src={images.gericht} alt="footer_logo"/>
@@ -30,13 +30,13 @@ const Footer = () => (
       <div className="app__footer-links_work">
         <h1 className="app__footer-headtext">Working Hours</h1>
         <p className="p__opensans">Monday-Friday: </p>
-        <p className="p__opensans">8AM-12AM</p>
+        <p className="p__opensans">10AM-2AM</p>
         <p className="p__opensans">Saturday-Sunday: </p>
-        <p className="p__opensans">+12PM-9PM</p>
+        <p className="p__opensans">10AM-3AM</p>
       </div>
     </div>
     <div className="footer__copyright">
-      <p className="p__opensans">2021 Black Basil. All Rights Reserved</p>
+      <p className="p__opensans">2024 Black Basil. All Rights Reserved</p>
     </div>
   </div>
 );

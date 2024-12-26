@@ -40,14 +40,14 @@ const cocktails = [
     tags: 'A refreshing blend of ginger ale and grenadine, topped with a maraschino cherry',
   },
   {
-    title: "Virgin Pina Colada",
+    title: "Virgin Piña Colada",
     price: '$12',
     tags: 'Coconut cream and fresh pineapple juiced, garnished with a slice of pineapple',
   },
   {
     title: 'Mango Mule',
     price: '$10',
-    tags: 'Ripe mango accomplanied by zesty notes of alcohol-free ginger beer',
+    tags: 'Ripe mango accompanied by zesty notes of alcohol-free ginger beer',
   },
   {
     title: 'Rasberry Lime Rickey',
@@ -62,7 +62,7 @@ const cocktails = [
   {
     title: 'Citrus Berry Spritzer',
     price: '$12',
-    tags: 'A vibrant mix of muddled strawberries, raspberries, and orange slices, topped with lemon-lime soda.',
+    tags: 'A vibrant mix of muddled strawberries, raspberries, and orange slices, topped with lemon-lime soda',
   }
 ];
 
