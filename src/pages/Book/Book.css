@@ -19,8 +19,15 @@ body {
   .book-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: var(--color-white);
+    font-family: var(--font-base);
+    color: var(--color-golden);
   }
+  .book-container h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+  } 
   
   .book-container form {
     display: flex;
@@ -39,8 +46,6 @@ body {
   
   .book-container button {
     padding: 10px;
-    background-color: var(--color-gray);
-    color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -78,4 +83,39 @@ body {
     margin-top: 10px;
     font-size: 14px;
   }
+  
+  .reservation-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .edit-button,
+  .cancel-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: var(--color-golden);
+    color: var(--color-black);
+  }
+  
+  .cancel-button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+  
+  .edit-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+  
+  .cancel-button:hover {
+    background-color: #ff4d4d;
+  }
+  
   

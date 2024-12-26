@@ -50,9 +50,9 @@ const cocktails = [
     tags: 'Ripe mango accompanied by zesty notes of alcohol-free ginger beer',
   },
   {
-    title: 'Rasberry Lime Rickey',
+    title: 'Raspberry Lime Rickey',
     price: '$10',
-    tags: 'Freshly picked rasberries mixed with lime juice and soda water',
+    tags: 'Freshly picked raspberries mixed with lime juice and soda water',
   },
   {
     title: 'Saffron Lemon Iced Tea',

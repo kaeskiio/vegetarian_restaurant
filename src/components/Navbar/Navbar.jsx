@@ -69,6 +69,11 @@ const Navbar = () => {
                 <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('contact'); }}>Contact</Link>
               </li>
             </ul>
+            {}
+            <div className="app__navbar-smallscreen_footer">
+              <Link to="/" className="p__cormorant" onClick={() => setToggleMenu(false)}>Log In</Link>
+              <Link to="/book" className="p__cormorant" onClick={() => setToggleMenu(false)}>Book a Table</Link>
+            </div>
           </div>
         )}
       </div>

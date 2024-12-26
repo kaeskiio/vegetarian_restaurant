@@ -11,7 +11,8 @@ const Book = () => {
   });
 
   const [reservations, setReservations] = useState([]);
-  const [errorMessage, setErrorMessage] = useState(''); 
+  const [errorMessage, setErrorMessage] = useState('');
+  const [editIndex, setEditIndex] = useState(null); // To track which reservation is being edited
 
   useEffect(() => {
     const savedReservations = localStorage.getItem('reservations');
@@ -36,8 +37,10 @@ const Book = () => {
     e.preventDefault();
 
     const isTimeTaken = reservations.some(
-      (reservation) =>
-        reservation.date === formData.date && reservation.time === formData.time
+      (reservation, index) =>
+        reservation.date === formData.date &&
+        reservation.time === formData.time &&
+        index !== editIndex // Exclude the currently edited reservation
     );
 
     if (isTimeTaken) {
@@ -45,10 +48,17 @@ const Book = () => {
     } else {
       setErrorMessage('');
 
-      setReservations([
-        ...reservations,
-        { ...formData },
-      ]);
+      if (editIndex !== null) {
+        // Update an existing reservation
+        const updatedReservations = reservations.map((reservation, index) =>
+          index === editIndex ? { ...formData } : reservation
+        );
+        setReservations(updatedReservations);
+        setEditIndex(null); // Reset edit mode
+      } else {
+        // Add a new reservation
+        setReservations([...reservations, { ...formData }]);
+      }
 
       setFormData({
         name: '',
@@ -58,6 +68,16 @@ const Book = () => {
         guests: 1,
       });
     }
+  };
+
+  const handleEdit = (index) => {
+    setFormData(reservations[index]);
+    setEditIndex(index);
+  };
+
+  const handleCancel = (index) => {
+    const updatedReservations = reservations.filter((_, i) => i !== index);
+    setReservations(updatedReservations);
   };
 
   return (
@@ -109,24 +129,40 @@ const Book = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">Reserve Table</button>
+          <button type="submit" className="custom__button">
+            {editIndex !== null ? 'Update Reservation' : 'Reserve Table'}
+          </button>
         </form>
 
-        {}
         {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-        {}
         <div className="reservations-list">
           {reservations.length > 0 && <h3>Reservations:</h3>}
-          {reservations.map((reservation, index) => (
-            <div key={index} className="reservation-box">
-              <h4>{reservation.name}</h4>
-              <p>Phone: {reservation.phone}</p>
-              <p>Date: {reservation.date}</p>
-              <p>Time: {reservation.time}</p>
-              <p>Guests: {reservation.guests}</p>
-            </div>
-          ))}
+          <div className="p__opensans">
+            {reservations.map((reservation, index) => (
+              <div key={index} className="reservation-box">
+                <h4>{reservation.name}</h4>
+                <p>Phone: {reservation.phone}</p>
+                <p>Date: {reservation.date}</p>
+                <p>Time: {reservation.time}</p>
+                <p>Guests: {reservation.guests}</p>
+                <div className="reservation-actions">
+                  <button
+                    className="edit-button"
+                    onClick={() => handleEdit(index)}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    className="cancel-button"
+                    onClick={() => handleCancel(index)}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
