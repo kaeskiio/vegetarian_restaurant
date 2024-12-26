@@ -25,7 +25,7 @@ const App = () => {
         <Route path ="/menu" element = {<><SpecialMenu /> <TastingMenu/> <Footer/></>}></Route>
         <Route path="/book" element= {<><Book /> <Footer/></>}></Route>
         <Route path="/farm" element= {<><Farm /> <Footer/></>}></Route>
-        <Route path="/team" element= {<><Team/></>}></Route>
+        <Route path="/team" element= {<><Team/> <Footer/></>}></Route>
       </Routes>
     </Router>
   );

@@ -38,6 +38,7 @@
 .app__TeamMember-content-show {
     display: block;
     width:100%;
+    margin-bottom:1rem;
 }
 
 .app__TeamMember-content-show p{

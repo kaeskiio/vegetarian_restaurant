@@ -38,7 +38,9 @@ const Team = () => {
   return (
     <div className='app__Team flex__center section__padding' id="Team">
         <div className='app__Team-title'>
-            <h1 className="headtext__cormorant">Meet our Team</h1>
+            <FadeInSection>
+                <h1 className="headtext__cormorant">Meet our Team</h1>
+            </FadeInSection>
         </div>
         <div className='app__TeamMembers flex__center'>
             {teamMembers.map((member) => (
