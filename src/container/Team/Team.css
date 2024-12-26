@@ -1,0 +1,31 @@
+.app__Team {
+    flex-direction: column;
+    background-color: #050407;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width:100%;
+}
+
+.app__Team-title{
+    text-align: center;
+}
+.app__TeamMembers{
+    margin-top:5rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__TeamMembers-other{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__TeamMembers-other p{
+    margin-bottom: 2.5rem
+}
