@@ -11,9 +11,9 @@ const TastingMenu = () => (
     <FadeInSection>
     <div className = "app__TastingMenu-title">
       <h1 className ="headtext__cormorant">Daily Menu</h1>
-    </div>
-    <div className = "app__TastingMenu-menu">
       <SubHeading title="Today's Selection"></SubHeading>
+    </div>
+    <div className="app__TastingMenu-FullMenu">
       <div className="app__TastingMenu-courseitems">
         {data.FullMenu.map((item, index) => (
           <Course key = {item.name +index} title={item.name} description = {item.description}/>

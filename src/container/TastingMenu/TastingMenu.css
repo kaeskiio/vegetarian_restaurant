@@ -10,11 +10,7 @@
 
 .app__TastingMenu-menu {
     width: 100%;
-    margin: 0rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .app__TastingMenu-courseitems{
@@ -23,6 +19,13 @@
 
     margin: 2rem 0;
     width: 100%;
+}
+
+.app__TastingMenu-FullMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 2000px) {
