@@ -60,6 +60,7 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <li><Link to="/" onClick={() => setToggleMenu(false)}>Home</Link></li>
               <li><Link to="/farm" onClick={() => setToggleMenu(false)}>About</Link></li>
+              <li><Link to="/team" onClick={() => setToggleMenu(false)}>Our Team</Link></li>
               <li><Link to="/menu" onClick={() => setToggleMenu(false)}>Menu</Link></li>
               <li>
                 <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('awards'); }}>Awards</Link>

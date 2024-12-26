@@ -6,7 +6,7 @@ import FadeInSection from '../../components/FadeInSection/FadeInSection';
 const Team = () => {
   const [activeTitle, setActiveTitle] = useState(null);
   const toggleAccordion = (title) => {
-    setActiveTitle(activeTitle === title ? null : title); // Toggle the active item by title
+    setActiveTitle(activeTitle === title ? null : title);
   };
 
   const teamMembers = [
@@ -19,8 +19,8 @@ const Team = () => {
         description: "Chef Joshua Wu was born and raised in Los Angeles, Californina. Early on, he became involved with culinary studies under the guidance of his parents who owned the michelin starred restaurant, Din Tai Fung. He eventually attended Stanford University where he studied culinary arts and hospitality, and he even joined his classmates in starting their own restaurant that specialized in vegetarian food. From there, Chef Wu moved to New York City to work as a chef at Eleven Madison Park where he recieved extensive training in working with fine dining and restaurant management. During the pandemic, Chef Wu quit working at Eleven Madison to join long-time friend Chef Ettahali to revamp Black Basil, bringing a more sustainable fine dining experience to the world."
     },
     {
-        name: "Ayyan Rehman, Headchef",
-        description: "Chef Ayyan Rehman was born and raised in Houston, Texas, where he developed a deep appreciation for diverse culinary traditions. Growing up in a family that valued homegrown ingredients, Ayyan’s interest in cooking flourished alongside his passion for farming. After studying culinary arts at the Culinary Institute of America in New York, he honed his skills at renowned restaurants such as Per Se and The Spotted Pig, gaining expertise in fine dining and sustainable practices. Ayyan’s entrepreneurial spirit led him to start his own farm, where he grows fresh, seasonal produce that plays a key role in his dishes. In collaboration with his long-time friend, Chef Ettahali, Ayyan took the reins of Black Basil during the pandemic, bringing his farm-to-table philosophy to the restaurant and transforming it into a beacon of innovative and sustainable fine dining."
+        name: "Ayyan Rehman, Head Chef",
+        description: "Chef Ayyan Rehman was born and raised in Houston, Texas, where he developed a deep appreciation for diverse culinary traditions. Growing up in a family that valued homegrown ingredients, Ayyan’s interest in cooking flourished alongside his passion for farming. After studying culinary arts at the Culinary Institute of America in New York, he honed his skills at renowned restaurants such as Per Se and The Spotted Pig, gaining expertise in fine dining and sustainable practices. Ayyan’s entrepreneurial spirit led him to start Ali's farm, named after his brother, where he grows fresh, seasonal produce that plays a key role in his dishes. In collaboration with his long-time friend, Chef Ettahali, Ayyan took the reins of Black Basil during the pandemic, bringing his farm-to-table philosophy to the restaurant and transforming it into a beacon of innovative and sustainable fine dining."
     },
     {
         name: "Gideon Kastner, Pastry Chef",
@@ -48,13 +48,13 @@ const Team = () => {
             ))}
         </div>
         <div className="app__TeamMembers-other flex__center">
-            <FadeInSection><p className="p__cormorant">Elizabeth Zhang, Executive Sous Chef</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">Daniel Isaac, Executive Sous Chef</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">Yasmin Al-Mansoori, Junior Sous Chef</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">Sami Shahriari, Junior Sous Chef</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">Emily Johnson, Pastry Sous Chef</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">Charlotte Anderson, Assitant Wine Director</p></FadeInSection>
-            <FadeInSection><p className="p__cormorant">William Thomas, Service Director</p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Elizabeth Zhang, <i>Executive Sous Chef</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Daniel Isaac, <i>Executive Sous Chef</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Yasmin Al-Mansoori, <i>Junior Sous Chef</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Sami Shahriari, <i>Junior Sous Chef</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Emily Johnson, <i>Pastry Sous Chef</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">Charlotte Anderson, <i>Assitant Wine Director</i></p></FadeInSection>
+            <FadeInSection><p className="p__cormorant">William Thomas, <i>Service Director</i></p></FadeInSection>
         </div>
     </div>
   )

@@ -4,27 +4,32 @@
     flex-direction:column;
     border-bottom: 1px solid #ccc;
     width: 80%;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .app__TeamMember-Header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between; /* changed from center to space-between*/
     cursor: pointer;
     align-items: center;
     border-radius: 4px;
     width:100%;
 }
 
-.TeamMember-Name h1{
-    align-items:center;
-    justify-content:center;
+.TeamMember-Name { /* added this whole thing */
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
     text-align: center;
-    margin-bottom:1rem;
+}
+
+.TeamMember-Name h1{
+    margin: 0; 
 }
 
 .TeamMember-Button{
+    display: flex; /*added*/
     align-items: flex-end;
     justify-content: flex-end;
 }
@@ -50,9 +55,9 @@
 .TeamMember-toggle {
     cursor: pointer;
     color:#ccc;
-    background-color:var(--color-black);
+    background-color: #050407;
     border: none;
     width:40px;
     font-size: 40px;
-    text-align: right;
+    text-align: center; /* changed from right to center*/
 }
