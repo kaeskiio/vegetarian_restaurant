@@ -8,6 +8,11 @@ import FadeInSection from '../../components/FadeInSection/FadeInSection';
 const Header = () => {
   const navigate = useNavigate(); 
 
+  const handleNavigate = () => {
+    navigate('/menu');
+    window.scrollTo(0, 0); 
+  };
+
   return (
     <div className="app__header app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">
@@ -24,7 +29,7 @@ const Header = () => {
           <button
             type="button"
             className="custom__button"
-            onClick={() => navigate('/menu')}
+            onClick={(handleNavigate)}
           >
             Explore Menu
           </button>
