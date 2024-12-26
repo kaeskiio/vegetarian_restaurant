@@ -3,9 +3,11 @@ import React from 'react';
 import {SubHeading, MenuItem } from '../../components'
 import { images, data } from '../../constants';
 import './SpecialMenu.css';
+import FadeInSection from '../../components/FadeInSection/FadeInSection';
 
 const SpecialMenu = () => (
   <div className = "app__specialMenu flex__center section__padding" id = "menu">
+    <FadeInSection>
     <div className = "app__specialMenu-title">
       <SubHeading title = "Where flavor meets nature"/>
       <h1 className ="headtext__cormorant">Menu & Stories</h1>
@@ -33,9 +35,7 @@ const SpecialMenu = () => (
         </div>
       </div>
     </div>
-    <div style = {{marginTop: '15px'}}>
-      <button type="button" className="custom__button"> View More</button>
-    </div>
+    </FadeInSection>
   </div>
 );
 

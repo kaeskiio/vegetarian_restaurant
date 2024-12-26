@@ -1,17 +1,43 @@
-.app__tastingmenu {
-    display: flex;
+.app__TastingMenu {
     flex-direction: column;
     background-color: #050407;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
 }
 
-.app__tastingmenu-chef{
+.app__TastingMenu-title {
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.app__TastingMenu-menu {
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__TastingMenu-courseitems{
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.app__TastingMenu-FullMenu{
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+    .app__TastingMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
 }
