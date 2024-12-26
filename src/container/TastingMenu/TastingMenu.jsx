@@ -10,7 +10,6 @@ const TastingMenu = () => {
         <SubHeading>Made with fresh ingredients from the farm</SubHeading>
       </div>
       <div className=".app__tastingmenu-">
-
       </div>
     </div>
   </div>

@@ -1,5 +1,10 @@
 .app__foodofday {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color-black);
 }
 
 .app__foodofday-overlay {
@@ -17,36 +22,38 @@
     width: 100%;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .app__foodofday-content_today {
     flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-
+    max-width: 400px;
+    margin: 1rem;
     text-align: right;
-}
-
-.app__foodofday-content_image {
-    margin: 2rem 4rem;
-}
-
-.app__foodofday-content_image img {
-    height: 500px;
+    align-self: flex-start;
 }
 
 .app__foodofday-content_details {
     flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-
+    max-width: 400px;
+    margin: 1rem;
     text-align: left;
+    align-self: flex-start;
+}
+
+.app__foodofday-content_image {
+    flex: 1;
+    margin: 2rem;
+    max-width: 500px;
+}
+
+.app__foodofday-content_image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .app__foodofday-content_today p,
@@ -55,15 +62,20 @@
     color: var(--color-grey);
 }
 
-@media screen and (min-width: 2000px) {
-    .app__foodofday-content_image img {
-        height: 650px;
-    }
+.custom__button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-golden);
+    color: var(--color-black);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-base);
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
 
-    .app__foodofday-content_today p,
-    .app__foodofday-content_details p {
-        margin: 4rem 0;
-    }
+.custom__button:hover {
+    background: var(--color-white);
 }
 
 @media screen and (max-width: 900px) {
@@ -71,12 +83,22 @@
         flex-direction: column;
     }
 
+    .app__foodofday-content_today {
+        text-align: center;
+        align-self: center;
+    }
+
+    .app__foodofday-content_details {
+        text-align: center;
+        align-self: center;
+    }
+
     .app__foodofday-content_image {
-        margin: 4rem 0;
+        margin: 2rem 0;
     }
 
     .app__foodofday-content_image img {
-        height: 400px;
+        max-height: 400px;
     }
 }
 

@@ -5,7 +5,7 @@ import { Navbar } from './components';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import Book from './pages/Book/Book'; 
+import { Farm, Book } from './pages';
 
 const App = () => {
   return (
@@ -14,15 +14,17 @@ const App = () => {
       <Routes>
         <Route path="/" element = {<><Header />
           <AboutUs />
-          <FoodofDay/><Intro />
+          <FoodofDay/>
+          <Chef />
+          <Intro />
           <Laurels />
           <Gallery />
           <FindUs />
-          <Chef />
           <Footer /></>}>
         </Route>
         <Route path ="/menu" element = {<><SpecialMenu /> <TastingMenu/> <Footer/></>}></Route>
-        <Route path="/book" element={<Book />} />
+        <Route path="/book" element= {<><Book /> <Footer/></>}></Route>
+        <Route path="/farm" element= {<><Farm /> <Footer/></>}></Route>
       </Routes>
     </Router>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
@@ -7,6 +7,17 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const navigate = useNavigate();
+
+  const handleScrollToSection = (sectionId) => {
+    navigate('/');
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <nav className="app__navbar">
@@ -14,11 +25,15 @@ const Navbar = () => {
         <img src={images.gericht} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans"><Link to = "/">Home</Link></li>
-        <li className="p__opensans"><a href="#about">About</a></li>
-        <li className="p__opensans"><Link to ="/menu">Menu</Link></li>
-        <li className="p__opensans"><a href="#awards">Awards</a></li>
-        <li className="p__opensans"><a href="#contact">Contact</a></li>
+        <li className="p__opensans"><Link to="/">Home</Link></li>
+        <li className="p__opensans"><Link to="/farm">About</Link></li>
+        <li className="p__opensans"><Link to="/menu">Menu</Link></li>
+        <li className="p__opensans">
+          <Link to="/" onClick={(e) => { e.preventDefault(); handleScrollToSection('awards'); }}>Awards</Link>
+        </li>
+        <li className="p__opensans">
+          <Link to="/" onClick={(e) => { e.preventDefault(); handleScrollToSection('contact'); }}>Contact</Link>
+        </li>
       </ul>
       <div className="app__navbar-login">
         <a href="/" className="p__opensans">Log In / Registration</a>
@@ -39,14 +54,20 @@ const Navbar = () => {
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
-              onClick={() => setToggleMenu(false)} 
+              onClick={() => setToggleMenu(false)}
             />
             <ul className="app__navbar-smallscreen_links">
-              <li><a href="/#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="/#about" onClick={() => setToggleMenu(false)}>About</a></li>
-              <li><a href="/#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li><a href="/#awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
-              <li><a href="/#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <li><Link to="/" onClick={() => setToggleMenu(false)}>Home</Link></li>
+              <li>
+                <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('farm'); }}>About</Link>
+              </li>
+              <li><Link to="/menu" onClick={() => setToggleMenu(false)}>Menu</Link></li>
+              <li>
+                <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('awards'); }}>Awards</Link>
+              </li>
+              <li>
+                <Link to="/" onClick={(e) => { e.preventDefault(); setToggleMenu(false); handleScrollToSection('contact'); }}>Contact</Link>
+              </li>
             </ul>
           </div>
         )}
