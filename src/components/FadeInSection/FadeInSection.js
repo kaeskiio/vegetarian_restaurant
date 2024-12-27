@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './FadeInSection.css';
 
 const FadeInSection = ({ children, translateXAmount=0, translateYAmount=0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
   const [threshold, setThreshold] = useState(0.3); //our default threshold
-  console.log(window.innerwidth)
+  console.log(window.innerWidth)
   useEffect(() => {
     const updateThreshold = () => {
-      if(window.innerwidth < 750){
+      if(window.innerWidth < 750){
         setThreshold(0);
-      } else if(window.innerwidth < 1150){
+      } else if(window.innerWidth < 1150){
         setThreshold(0.2);
       }else{
         setThreshold(0.3);
@@ -47,7 +48,7 @@ const FadeInSection = ({ children, translateXAmount=0, translateYAmount=0 }) => 
   }, [threshold]);
 
   return (
-    <div
+    <div className='.app__FadeInSection'
       ref={sectionRef}
       style={{
         opacity: isVisible ? 1 : 0,

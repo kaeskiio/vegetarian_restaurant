@@ -44,7 +44,7 @@ const Team = () => {
         </div>
         <div className='app__TeamMembers flex__center'>
             {teamMembers.map((member) => (
-                <TeamMember name={member.name} description={member.description} isActive={activeTitle === member.name} onToggle={toggleAccordion}></TeamMember>
+                <FadeInSection><TeamMember name={member.name} description={member.description} isActive={activeTitle === member.name} onToggle={toggleAccordion}></TeamMember></FadeInSection>
             ))}
         </div>
         <div className="app__TeamMembers-other flex__center">
