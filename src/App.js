@@ -15,7 +15,6 @@ const App = () => {
         <Route path="/" element = {<><Header />
           <AboutUs />
           <FoodofDay/>
-          <Chef />
           <Intro />
           <Laurels />
           <Gallery />
