@@ -1,54 +1,90 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Specials.css';
-import {SubHeading} from '../../components';
-import {images} from '../../constants';
+import { SubHeading } from '../../components';
+import { images } from '../../constants';
 import FadeInSection from '../../components/FadeInSection/FadeInSection';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+
+const eventData = [
+  {
+    title: 'Private Dining Experience',
+    image: images.dining,
+    description: 'Our exclusive private dining rooms can host up to 30 guests. Perfect for intimate family reunions or team dinners.',
+  },
+  {
+    title: 'Christmas & New Year’s Eve Specials',
+    image: images.christmas,
+    description: 'Celebrate the holidays with a 25% discount and a festive, luxurious dinner menu.',
+  },
+  {
+    title: 'Catering Services',
+    image: images.catering,
+    description: 'Looking for gourmet catering for large events? Book our top-tier catering services for weddings, corporate dinners, and more.',
+  },
+];
 
 const Specials = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % eventData.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+
+  const handleArrowClick = (direction) => {
+    if (direction === 'left') {
+      setCurrentSlide((prevSlide) => (prevSlide - 1 + eventData.length) % eventData.length);
+    } else {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % eventData.length);
+    }
+  };
+
   return (
-    <div className="app__Specials" id="Specials">
-        <FadeInSection>
-            <div className="app__Specials-title">
-                <h1 className="headtext__cormorant">Special Events & More</h1>
+    <div className={`app__Specials ${darkMode ? 'dark' : ''}`} id="Specials">
+      <FadeInSection>
+        <div className="app__Specials-title">
+          <h1 className="headtext__cormorant">Special Events & More</h1>
+        </div>
+      </FadeInSection>
+
+      <div className="app__Specials-carousel">
+        <div className="app__Specials-img-container">
+          <img
+            src={eventData[currentSlide].image}
+            alt="Special Event"
+            className="app__Specials-img"
+          />
+          <div className="app__Specials-overlay">
+            <div className="app__Specials-hover-content">
+              <h2>{eventData[currentSlide].title}</h2>
+              <p>{eventData[currentSlide].description}</p>
             </div>
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-img"><img src={images.dining}/></div> 
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-privatedining">
-                <h1 className="app__specialMenu-menu_heading"> Events and Private Dining </h1>
-                <p className="app__p__cormorant">
-                    Our restaurant proudly boasts 3 private dining rooms each capable of hosting 30 guests, perfect for family reunions and team dinners. Please feel free to reach out via email to book the dining areas and request more information. We are also open to discussing larger events that require a full restaurant buy-out.
-                </p>
-            </div>
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-img"><img src={images.christmas}/></div> 
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-Christmas">
-                <h1 className="app__specialMenu-menu_heading"> Christmas and New Years Eve </h1>
-                <p className="app__p__cormorant">
-                    Black Basil is offering a 25% discount for dinner on Christmas Eve and New Years Eve in light of the holiday spirits! The special holiday dinner will feature our take on unique Christmas classics and a decadent holiday decor. Book your spot through the reservation section above!
-                </p>
-            </div>
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-img"><img src={images.catering}/></div> 
-        </FadeInSection>
-        <FadeInSection translateYAmount={30}>
-            <div className="app__Specials-catering">
-                <h1 className="app__specialMenu-menu_heading">
-                    Catering
-                </h1>
-                <p className="app__p__cormorant">
-                    Hosting large scale events and want quality dining? Black Basil offers special catering services upon request at large revenues for social occassions including marriage, company dinners, and more. Food items choices for catering are more limited, and catering services must be requested 2 weeks in advance. If you need more information, llease feel free to reach out for personal inquiries!
-                </p>
-            </div>
-        </FadeInSection>
+          </div>
+        </div>
+      </div>
+
+      <div className="app__Specials-details">
+        <h2 className="app__specialMenu-menu_heading">{eventData[currentSlide].title}</h2>
+        <p className="app__p__cormorant">{eventData[currentSlide].description}</p>
+      </div>
+
+      <div className="app__Specials-controls">
+        <BsArrowLeftShort
+          className="gallery__arrow-icon"
+          onClick={() => handleArrowClick('left')}
+        />
+        <BsArrowRightShort
+          className="gallery__arrow-icon"
+          onClick={() => handleArrowClick('right')}
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Specials;

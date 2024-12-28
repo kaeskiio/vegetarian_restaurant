@@ -18,7 +18,7 @@ const Footer = () => (
         <p className="p__opensans">+1 281 245 3800</p>
       </div>
       <div className="app__footer-links_logo">
-        <img src={images.gericht} alt="footer_logo"/>
+        <img src={images.blackbasil} alt="footer_logo"/>
         <p className="p__opensans">Dine with a purpose—savor the flavors of sustainable, plant-based meals that nourish both your body and our planet</p>
         <img src={images.spoon} alt="spoon" className="spoon__img" style = {{marginTop: 15}}/>
         <div className="app__footer-links_icons">
