@@ -16,7 +16,7 @@ const Team = () => {
     },
     {
         name: 'Joshua Wu, Cofounder and Executive Chef',
-        description: "Chef Joshua Wu was born and raised in Los Angeles, Californina. Early on, he became involved with culinary studies under the guidance of his parents who owned the michelin starred restaurant, Din Tai Fung. He eventually attended Stanford University where he studied culinary arts and hospitality, and he even joined his classmates in starting their own restaurant that specialized in vegetarian food. From there, Chef Wu moved to New York City to work as a chef at Eleven Madison Park where he recieved extensive training in working with fine dining and restaurant management. During the pandemic, Chef Wu quit working at Eleven Madison to join long-time friend Chef Ettahali to revamp Black Basil, bringing a more sustainable fine dining experience to the world."
+        description: "Chef Joshua Wu was born and raised in Los Angeles, Californina. Early on, he became involved with culinary studies under the guidance of his parents who worked at the michelin starred restaurant, Din Tai Fung. He eventually attended Stanford University where he studied culinary arts and hospitality, and he even joined his classmates in starting their own restaurant that specialized in vegetarian food. From there, Chef Wu moved to New York City to work as a chef at Eleven Madison Park where he recieved extensive training in working with fine dining and restaurant management. During the pandemic, Chef Wu quit working at Eleven Madison to join long-time friend Chef Ettahali to revamp Black Basil, bringing a more sustainable fine dining experience to the world."
     },
     {
         name: "Ayyan Rehman, Head Chef",
@@ -24,15 +24,23 @@ const Team = () => {
     },
     {
         name: "Gideon Kastner, Pastry Chef",
-        description: "Pastry Chef Gideon Kastner was born and raised in Montreal, Canada, where he developed a passion for baking at an early age. Surrounded by a vibrant culinary scene, Gideon was drawn to the art of pastry, inspired by his grandmother’s traditional recipes and the city’s rich European influence. He attended the Culinary Institute of America, where he specialized in pastry arts, refining his skills under the mentorship of acclaimed chefs. After graduating, Gideon worked in several prestigious patisseries, including Dominique Ansel Bakery in New York and Pierre Hermé in Paris, where he perfected his craft and developed a keen eye for detail and creativity. In recent years, Chef Kastner has combined his love for classic French pastry techniques with a modern twist, earning accolades for his innovative desserts. Today, he serves as the head pastry chef at Black Basil, where he brings a fresh perspective to the restaurant’s dessert offerings, delighting guests with his beautifully executed and imaginative confections.",
+        description: "Pastry Chef Gideon Kastner was born and raised in Montreal, Canada, where he developed a passion for baking at an early age. Surrounded by a vibrant culinary scene, Gideon was drawn to the art of pastry, inspired by his grandmother’s traditional recipes and the city’s rich European influence. He attended Harvard University and the Culinary Institute of America, where he specialized in pastry arts, refining his skills under the mentorship of acclaimed chefs. After graduating, Gideon worked in several prestigious patisseries, including Dominique Ansel Bakery in New York and Pierre Hermé in Paris, where he perfected his craft and developed a keen eye for detail and creativity. In recent years, Chef Kastner has combined his love for classic French pastry techniques with a modern twist, earning accolades for his innovative desserts. Today, he serves as the head pastry chef at Black Basil, where he brings a fresh perspective to the restaurant’s dessert offerings, delighting guests with his beautifully executed and imaginative confections.",
     },
     {
         name: "Rishabh Makker, Executive Wine Director",
         description: "Rishabh Makker was born and raised in New Delhi, India, where he first developed an interest in the world of wine through his family’s passion for fine dining and hospitality. His curiosity led him to pursue formal education in wine at the prestigious Le Cordon Bleu in London, where he studied viticulture and oenology. After completing his training, Rishabh gained hands-on experience working at renowned wineries and restaurants across Europe, including in the vineyards of Napa Valley and the cellars of Burgundy, France. With his deep understanding of both traditional wine regions and innovative winemaking techniques, Rishabh has developed a reputation for curating exceptional wine lists that perfectly complement modern cuisine. As the Wine Director at Black Basil, Rishabh brings a wealth of expertise to the team, crafting a wine program that balances sustainability with sophistication and offers guests a truly immersive dining experience.",
     },
     {
-        name: "Winston Ma, Executive manager",
+        name: "Winston Ma, Marketing Manager",
         description: "Winston Ma was born and raised in Guangdong, China, where he developed a strong appreciation for the region’s rich culinary heritage and vibrant hospitality industry. Growing up in a family that valued both business and tradition, Winston was inspired to pursue a career in hospitality management. He studied Business Administration at the University of Hong Kong, where he focused on restaurant management and operations. After completing his degree, Winston gained extensive experience working in high-end hotels and restaurants across Asia, including in Shanghai and Hong Kong, where he honed his skills in operations, team leadership, and customer service. As the Executive Manager at Black Basil, Winston combines his expertise in hospitality with his deep understanding of Chinese culture and cuisine. His leadership ensures the smooth operation of the restaurant, creating an exceptional dining experience for guests while maintaining a focus on sustainability and innovation.",
+    },
+    {
+        name: "Anish Row, General manager",
+        description: "Born and raised in Orlando, a city reknowned for its tourism, Anish developed an interest in hospitality from a young age. After graduating with an MBA from Harvard University, Anish began working at Mariott International Inc., eventually becoming the regional manager for the New England area. Upon bequest from long-time friend and alumni, Pastry Chef Gideon Kastner, Anish Row brought his expertise to Black Basil. Anish's efficient management of restaurant operaions and events has played a monumenta role in earning Black Basil three michelin stars.",
+    },
+    {
+        name: "Suraj Patel, Executive Culinary Director",
+        description: "Suraj Patel has always had a penchant for innovation. Growing up in a vegatarian household, Suraj sought to transform the bland and often repetitive household cuisine into something more compelling. After extensive study at the Culinary Institute of America, Suraj began working at the French Laundry, specializing in their vegetarian tasting menu. When an opportunity opened up at Black Basil, Suraj began working to bring his innovative thinking to Black Basil's cuisine as the Executive Culinary Director.",
     }
   ]
   return (
@@ -44,7 +52,7 @@ const Team = () => {
         </div>
         <div className='app__TeamMembers flex__center'>
             {teamMembers.map((member) => (
-                <TeamMember name={member.name} description={member.description} isActive={activeTitle === member.name} onToggle={toggleAccordion}></TeamMember>
+                <FadeInSection><TeamMember name={member.name} description={member.description} isActive={activeTitle === member.name} onToggle={toggleAccordion}></TeamMember></FadeInSection>
             ))}
         </div>
         <div className="app__TeamMembers-other flex__center">
