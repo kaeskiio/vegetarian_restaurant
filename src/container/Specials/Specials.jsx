@@ -7,7 +7,7 @@ import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 const eventData = [
   {
-    title: 'Private Dining Experience',
+    title: 'Private Dining Experiences',
     image: images.dining,
     description: 'Our exclusive private dining rooms can host up to 30 guests. Perfect for intimate family reunions or team dinners.',
   },
