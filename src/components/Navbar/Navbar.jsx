@@ -40,7 +40,7 @@ const Navbar = () => {
           { menuOpen && (
             <div className="app__navbarmenu_open">
               <li className="app__p__opensans"><Link to="/menu">Dine In</Link></li>
-              <li className="app__p__opensans"><Link to="/team">To Go</Link></li>
+              <li className="app__p__opensans"><Link to="/ToGo">To Go</Link></li>
             </div>
           )}
         </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="app__p__opensans">
-                      <Link to="/team" onClick={() => { setToggleMenu(false); setMenuOpen(false); }}>
+                      <Link to="/ToGo" onClick={() => { setToggleMenu(false); setMenuOpen(false); }}>
                         To Go
                       </Link>
                     </li>

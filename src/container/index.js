@@ -11,6 +11,7 @@ import FoodofDay from './FoodofDay/FoodofDay';
 import TastingMenu from './TastingMenu/TastingMenu';
 import Team from './Team/Team';
 import Specials from './Specials/Specials';
+import ToGo from './ToGo/ToGo';
 
 export {
   AboutUs,
@@ -26,4 +27,5 @@ export {
   TastingMenu,
   Team,
   Specials,
+  ToGo,
 };
