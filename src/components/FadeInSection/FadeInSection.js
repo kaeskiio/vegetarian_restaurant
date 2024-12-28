@@ -48,7 +48,7 @@ const FadeInSection = ({ children, translateXAmount=0, translateYAmount=0 }) => 
   }, [threshold]);
 
   return (
-    <div className='.app__FadeInSection'
+    <div className='app__FadeInSection'
       ref={sectionRef}
       style={{
         opacity: isVisible ? 1 : 0,
