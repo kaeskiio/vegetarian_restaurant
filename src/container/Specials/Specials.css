@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: #050407;
     padding: 3rem;
-    position: relative;
+    position: static;
   }
   
   .app__Specials.dark {
@@ -92,7 +92,7 @@
   
   .app__Specials-controls {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 0;
     right: 0;
     display: flex;
