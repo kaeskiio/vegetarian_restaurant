@@ -24,7 +24,7 @@ const Header = () => {
         </FadeInSection>
         <FadeInSection translateYAmount={50}>
           <p className="p__opensans" style={{ margin: '2rem 0' }}>
-            Fresh produce from our fully organic farms in Scarsborough, New York. Satisfy your cravings with our sustainable yet scrumptious creations. Book your reservation today!
+            Fresh produce from our fully organic farms. Satisfy your cravings with our sustainable yet scrumptious creations. Book your reservation today!
           </p>
           <button
             type="button"

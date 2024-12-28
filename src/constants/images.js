@@ -22,6 +22,9 @@ import gericht from '../assets/gericht.png';
 import tbb from '../assets/tbb.png';
 import header_image from '../assets/header_image.png';
 import negroni from '../assets/negroni.png';
+import dining from '../assets/dining.png';
+import christmas from '../assets/christmas.png';
+import catering from '../assets/catering.png';
 
 export default {
   bg,
@@ -48,4 +51,7 @@ export default {
   tbb,
   header_image,
   negroni,
+  dining,
+  christmas,
+  catering, 
 };

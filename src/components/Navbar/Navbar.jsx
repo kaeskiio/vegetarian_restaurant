@@ -37,7 +37,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="app__navbar-login">
-        <a href="/" className="p__opensans">Specials</a>
+        <Link to="/Specials" className="p__opensans">Specials</Link>
         <div />
         <Link to="/book" className="p__opensans">Book Table</Link>
       </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
             </ul>
             {}
             <div className="app__navbar-smallscreen_footer">
-              <Link to="/" className="p__cormorant" onClick={() => setToggleMenu(false)}>Specials</Link>
+              <Link to="/Specials" className="p__cormorant" onClick={() => setToggleMenu(false)}>Specials</Link>
               <Link to="/book" className="p__cormorant" onClick={() => setToggleMenu(false)}>Book a Table</Link>
             </div>
           </div>

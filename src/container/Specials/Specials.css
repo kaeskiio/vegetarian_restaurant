@@ -1,0 +1,68 @@
+.app__Specials{
+    display: flex;
+    background-color: #050407;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app__Specials-title{
+    display: flex;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-golden);
+    margin: 2rem 0;
+}
+.app__p__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+    line-height: 1.75;
+}
+
+.app__Specials-privatedining{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 2rem 0;
+}
+
+.app__Specials-img{
+    width:800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app__Specials-img img{
+    width:90%;
+}
+
+.app__Specials-Christmas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 3rem 0;
+}
+
+.app__Specials-catering{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 3rem 0;
+}

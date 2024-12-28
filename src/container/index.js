@@ -9,7 +9,8 @@ import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
 import FoodofDay from './FoodofDay/FoodofDay';
 import TastingMenu from './TastingMenu/TastingMenu';
-import Team from './Team/Team'
+import Team from './Team/Team';
+import Specials from './Specials/Specials';
 
 export {
   AboutUs,
@@ -24,4 +25,5 @@ export {
   FoodofDay,
   TastingMenu,
   Team,
+  Specials,
 };
