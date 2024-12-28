@@ -16,7 +16,6 @@ const App = () => {
           <AboutUs />
           <FoodofDay/>
           <Intro />
-          <Laurels />
           <Gallery />
           <FindUs />
           <Footer /></>}>
@@ -26,6 +25,7 @@ const App = () => {
         <Route path="/farm" element= {<><Farm /> <Footer/></>}></Route>
         <Route path="/team" element= {<><Team/> <Footer/></>}></Route>
         <Route path="/Specials" element ={<><Specials/><Footer/></>}></Route>
+        <Route path="/awards" element ={<><Laurels/><Footer/></>}></Route>
       </Routes>
     </Router>
   );
