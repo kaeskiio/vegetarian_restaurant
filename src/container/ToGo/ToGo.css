@@ -1,0 +1,241 @@
+.app__ToGo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black)
+}
+
+.app__ToGo-title{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.app__ToGo-image{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.app__ToGo-image img{
+    width:800px;
+}
+
+.app__ToGo-food{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__ToGo-food h1 {
+    display: flex;
+    text-align: center;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--color-golden);
+    margin-bottom: 1rem;  /* Add space between title and description */
+}
+
+.app__ToGo-fooditems{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width:80%;
+}
+
+.app__checkbox{
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+    accent-color: #ffcc00; 
+    margin-right: 2rem;
+    border-radius: 4px;
+    border: 2px solid var(--color-golden);
+}
+
+.app__ToGo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+  
+.app__ToGo-item-label {
+    margin-left: 10px;
+}
+  
+  /*Buttons*/
+.app__ToGo-addToCartButton {
+    display:flex;
+    margin: 20px 2rem;
+    padding: 10px 20px;
+    width:80px;
+    background-color: var(--color-golden);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4 ease-in-out;
+}
+
+.app__ToGo-addToCartButton.highlight {
+    background-color: green;
+    border-color: green;
+    color: white;
+    box-shadow: 0 0 10px green;
+    transition: all 0.4 ease-in-out;
+}
+
+.app__ViewCartButton{
+    position: fixed; /* Keeps it fixed in the viewport */
+    right: 20px; /* Distance from the right edge */
+    top: 80px; /* Distance from the top edge */
+    z-index: 1000; 
+    display:flex;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: var(--color-golden);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app__ViewCartButton:hover {
+    background-color: #555; /* Change color on hover */
+}
+
+.app__remove{
+    width:20%;
+    display: flex;
+    background-color: transparent;
+    align-items:flex-end;
+    justify-content:flex-end;
+    color:white;
+    height:60%;
+    text-align:right;
+    padding: 0;
+    border: none; 
+    cursor: pointer;
+    margin-right:0.3rem;
+}
+.app__remove p{
+    text-align:right;
+}
+/**/
+
+.app__order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+.app__ToGo-cartTitle {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.app__ToGo-cartList {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.app__ToGo-cartItem {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    border: 2px solid var(--color-golden);
+    border-radius: 4px;
+    width:80%;
+    height:40px;
+    flex-direction: row;
+    display: flex;
+}
+
+.app__ToGo-cartItem:hover {
+  background-color:#555;
+}
+
+.app__description{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width:70%;
+}
+
+.app__cart {
+    position: fixed; 
+    flex-direction: column;
+    right: 0px; 
+    top: 0px;
+    z-index: 1001; 
+    background-color:rgb(36, 32, 32); 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    width: 350px; 
+    height: 100vh;
+    overflow-y: auto; /*scroll*/
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+}
+
+.app__bottom{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Buttons for Cart Section*/
+
+.app__KeepShopping{
+    position:absolute;
+    display:flex;
+    margin: 20px 2rem;
+    padding: 10px 20px;
+    width: 100px;   
+    height: 50px;    
+    background-color: rgb(228, 110, 110);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4 ease-in-out;
+    right:150px;
+    bottom:0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__Checkout{
+    display:flex;
+    margin: 20px 2rem;
+    padding: 10px 20px;
+    width: 100px; 
+    height: 50px;    
+    background-color: rgb(139, 211, 139);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4 ease-in-out;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    justify-content: center;
+    align-items: center;
+}

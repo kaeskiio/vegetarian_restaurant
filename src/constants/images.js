@@ -25,6 +25,7 @@ import negroni from '../assets/negroni.png';
 import dining from '../assets/dining.png';
 import christmas from '../assets/christmas.png';
 import catering from '../assets/catering.png';
+import ToGo from '../assets/ToGo.png';
 
 export default {
   B,
@@ -54,4 +55,5 @@ export default {
   dining,
   christmas,
   catering, 
+  ToGo,
 };

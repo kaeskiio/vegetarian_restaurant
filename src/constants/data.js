@@ -141,4 +141,71 @@ const FullMenu = [
 ];
 
 
-export default { wines, cocktails, awards, FullMenu };
+const TakeOut = [
+  {
+    name: "Grilled Vegetable & Halloumi Skewers",
+    description: "A selection of colorful vegetables and rich halloumi cheese grilled to perfection, drizzled with a balsamic glaze and served with a side of herb-infused couscous.",
+  },
+  {
+    name: "Wild Mushroom Risotto",
+    description: "Creamy risotto made with a blend of wild mushrooms, finished with a touch of white truffle oil and grated parmesan for an earthy and luxurious flavor.",
+  },
+  {
+    name: "Smoked Carrot & Beetroot Tartare",
+    description: "A vibrant tartare of finely diced smoked carrots and roasted beets, complemented by a tangy mustard dressing and served with crispy black sesame crackers.",
+  },
+  {
+    name: "Stuffed Zucchini Flowers",
+    description: "Delicate zucchini flowers filled with herbed ricotta, lightly battered and fried, served with a lemon-basil aioli for a crispy, savory treat.",
+  },
+  {
+    name: "Crispy Cauliflower Steak",
+    description: "A golden-brown cauliflower steak, seasoned with turmeric and cumin, topped with a mint yogurt sauce and served with a side of sautéed spinach and roasted cherry tomatoes.",
+  },
+  {
+    name: "Vegan Truffle Mac 'n' Cheese",
+    description: "A rich, creamy vegan cheese sauce made with cashews and nutritional yeast, combined with al dente pasta and finished with a drizzle of black truffle oil.",
+  },
+  {
+    name: "Lentil & Mushroom Wellington",
+    description: "A vegetarian twist on the classic Wellington, featuring a savory lentil and wild mushroom filling wrapped in flaky puff pastry and served with a rich red wine reduction.",
+  },
+  {
+    name: "Butternut Squash & Sage Ravioli",
+    description: "Homemade ravioli filled with a smooth butternut squash and sage mixture, served in a brown butter sauce with toasted pine nuts and fresh parmesan.",
+  },
+];
+
+const Dessert = [
+  {
+    name: "Vegan Chocolate Tart",
+    description: "A decadent chocolate tart with a smooth, rich vegan chocolate filling in a crisp pastry shell, topped with fresh raspberries and a dusting of cocoa powder.",
+  },
+  {
+    name: "Lemon & Lavender Panna Cotta",
+    description: "A delicate panna cotta infused with lemon and lavender, served with a fresh berry compote and a hint of vanilla bean.",
+  },
+  {
+    name: "Tiramisu with Vegan Mascarpone",
+    description: "A creamy, indulgent tiramisu made with layers of espresso-soaked ladyfingers, a rich vegan mascarpone cream, and dusted with cocoa powder.",
+  },
+  {
+    name: "Pistachio & Rosewater Baklava",
+    description: "Flaky, buttery layers of phyllo dough filled with crushed pistachios and scented with rosewater, drizzled with honey syrup for a sweet, aromatic finish.",
+  },
+  {
+    name: "Coconut & Mango Panna Cotta",
+    description: "A silky coconut panna cotta paired with a refreshing mango coulis, garnished with toasted coconut flakes and mint leaves.",
+  },
+  {
+    name: "Raspberry & Almond Frangipane Tart",
+    description: "A buttery almond frangipane filling in a crisp pastry shell, topped with fresh raspberries and finished with a light dusting of powdered sugar.",
+  },
+  {
+    name: "Chocolate & Hazelnut Mousse",
+    description: "A rich and velvety chocolate mousse with a hint of hazelnut, topped with chopped hazelnuts and a drizzle of caramel sauce.",
+  },
+]
+
+
+export default { wines, cocktails, awards, FullMenu, TakeOut, Dessert };
