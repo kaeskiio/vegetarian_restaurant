@@ -15,7 +15,6 @@ const FoodofDay = () => (
             <h1 className="headtext__cormorant">Food of the Day</h1>
             <img src={images.spoon} alt="decorative spoon" className="spoon__img" />
             <p className="p__opensans">Today's special is our delicious Black Basil Pasta, featuring homemade plant-based ingredients for a rich, satisfying flavor that promotes sustainability.</p>
-            <button type="button" className="custom__button">Discover More</button>
           </FadeInSection>
         </div>
 
@@ -30,7 +29,6 @@ const FoodofDay = () => (
           <h1 className="headtext__cormorant">Why It's Special</h1>
           <img src={images.spoon} alt="decorative spoon" className="spoon__img" />
           <p className="p__opensans">Our Black Basil Pasta is crafted with the finest locally sourced ingredients, combining tradition with innovation to create a unique culinary experience.</p>
-          <button type="button" className="custom__button">Read More</button>
         </FadeInSection>
       </div>
     </div>

@@ -153,15 +153,18 @@
 }
   
 .app__ToGo-cartItem {
-    margin: 5px 0;
+    margin: 15px 0;
     font-size: 1.1rem;
     border: 2px solid var(--color-golden);
     border-radius: 4px;
-    width:80%;
-    height:40px;
-    flex-direction: row;
+    width: 100%;
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
+
 
 .app__ToGo-cartItem:hover {
   background-color:#555;
@@ -175,30 +178,53 @@
 }
 
 .app__cart {
-    position: fixed; 
+    position: fixed;
     flex-direction: column;
-    right: 0px; 
+    right: -350px; /* Initially off-screen */
     top: 0px;
-    z-index: 1001; 
-    background-color:rgb(36, 32, 32); 
-    border: 1px solid #ddd; 
+    z-index: 1001;
+    background-color: rgb(36, 32, 32);
+    border: 1px solid #ddd;
     border-radius: 5px;
-    width: 350px; 
+    width: 350px;
     height: 100vh;
-    overflow-y: auto; /*scroll*/
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
 }
 
-.app__bottom{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+.app__cart.open {
+    right: 0px; /* Bring it into view when open */
 }
+
+.app__cart-items {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 200px); /* Adjust height for total and buttons */
+    padding-bottom: 10px;
+}
+
+.app__cart-total {
+    position: sticky; /* Keeps the total fixed */
+    bottom: 70px; /* Position above the buttons */
+    background-color: rgb(36, 32, 32);
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-golden);
+    border-top: 1px solid var(--color-golden);
+}
+
+.app__bottom {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 40px); /* Adjust for padding */
+}
+
 
 /* Buttons for Cart Section*/
 
@@ -239,3 +265,4 @@
     justify-content: center;
     align-items: center;
 }
+

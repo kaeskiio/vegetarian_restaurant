@@ -3,7 +3,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
     margin-top: 3rem;
 }
 
@@ -13,8 +12,28 @@
     justify-content: flex-start;
     align-items: flex-start;
     min-width: 230px;
-
     margin: 1rem;
+}
+
+.app__wrapper_img {
+    position: relative;
+    display: inline-block;
+    width: 1000px;
+}
+
+.egg {
+    width: 100%;
+    height: auto;
+}
+
+.awardB {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 8%; /* Adjusted to make B smaller */
+    height: auto;
 }
 
 @media screen and (min-width: 1900px) {

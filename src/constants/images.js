@@ -15,7 +15,7 @@ import laurels from '../assets/laurels.png';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
-import award05 from '../assets/award05.png';
+import award04 from '../assets/award04.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import blackbasil from '../assets/blackbasil.png';
@@ -26,6 +26,7 @@ import dining from '../assets/dining.png';
 import christmas from '../assets/christmas.png';
 import catering from '../assets/catering.png';
 import ToGo from '../assets/ToGo.png';
+import egg from '../assets/egg.jpg';
 
 export default {
   B,
@@ -45,7 +46,7 @@ export default {
   award01,
   award02,
   award03,
-  award05,
+  award04,
   sign,
   quote,
   blackbasil,
@@ -56,4 +57,5 @@ export default {
   christmas,
   catering, 
   ToGo,
+  egg,
 };

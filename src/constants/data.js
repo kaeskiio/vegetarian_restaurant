@@ -69,25 +69,26 @@ const cocktails = [
 const awards = [
   {
     imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Michelin Star',
+    subtitle: 'Award for exceptional culinary quality and innovation.',
   },
   {
     imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'James Beard Award',
+    subtitle: 'Recognizes culinary excellence in the U.S.',
   },
   {
     imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'World’s 50 Best Restaurants',
+    subtitle: 'The world’s top dining experiences.',
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: images.award04,
+    title: 'Best New Restaurant',
+    subtitle: 'Premier standout restaurants in America.',
   },
 ];
+
 
 const FullMenu = [
   {
@@ -145,35 +146,43 @@ const TakeOut = [
   {
     name: "Grilled Vegetable & Halloumi Skewers",
     description: "A selection of colorful vegetables and rich halloumi cheese grilled to perfection, drizzled with a balsamic glaze and served with a side of herb-infused couscous.",
+    price: 14.99
   },
   {
     name: "Wild Mushroom Risotto",
     description: "Creamy risotto made with a blend of wild mushrooms, finished with a touch of white truffle oil and grated parmesan for an earthy and luxurious flavor.",
+    price: 18.49
   },
   {
     name: "Smoked Carrot & Beetroot Tartare",
     description: "A vibrant tartare of finely diced smoked carrots and roasted beets, complemented by a tangy mustard dressing and served with crispy black sesame crackers.",
+    price: 12.75
   },
   {
     name: "Stuffed Zucchini Flowers",
     description: "Delicate zucchini flowers filled with herbed ricotta, lightly battered and fried, served with a lemon-basil aioli for a crispy, savory treat.",
+    price: 16.99
   },
   {
     name: "Crispy Cauliflower Steak",
     description: "A golden-brown cauliflower steak, seasoned with turmeric and cumin, topped with a mint yogurt sauce and served with a side of sautéed spinach and roasted cherry tomatoes.",
+    price: 15.49
   },
   {
     name: "Vegan Truffle Mac 'n' Cheese",
     description: "A rich, creamy vegan cheese sauce made with cashews and nutritional yeast, combined with al dente pasta and finished with a drizzle of black truffle oil.",
+    price: 17.25
   },
   {
     name: "Lentil & Mushroom Wellington",
     description: "A vegetarian twist on the classic Wellington, featuring a savory lentil and wild mushroom filling wrapped in flaky puff pastry and served with a rich red wine reduction.",
+    price: 19.99
   },
   {
     name: "Butternut Squash & Sage Ravioli",
     description: "Homemade ravioli filled with a smooth butternut squash and sage mixture, served in a brown butter sauce with toasted pine nuts and fresh parmesan.",
-  },
+    price: 16.75
+  }
 ];
 
 const Dessert = [
