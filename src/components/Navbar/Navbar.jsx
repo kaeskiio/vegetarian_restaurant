@@ -5,9 +5,11 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
 
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleScrollToSection = (sectionId) => {
@@ -24,6 +26,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleAboutClick = () => {
+    setAboutOpen(!aboutOpen);
+  };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -32,19 +38,27 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans" onClick={() => {setMenuOpen(false);}}><Link to="/">Home</Link></li>
-        <li className="p__opensans" onClick={() => {setMenuOpen(false);}}><Link to="/farm">About</Link></li>
-        <li className="p__opensans" onClick={() => {setMenuOpen(false);}}><Link to="/team">Our Team</Link></li>
-        <li className="p__opensans" onClick={handleMenuClick}>
+        <li className="p__opensans" onClick={() => {setMenuOpen(false); setAboutOpen(false);}}><Link to="/">Home</Link></li>
+        <li className="p__opensans" onClick={() => {handleAboutClick(); setMenuOpen(false);}}>
+          About 
+          { aboutOpen && (
+            <div className="app__navbarabout_open">
+              <li className="app__p__opensans"><Link to="/Farm">Our Farm</Link></li>
+              <li className="app__p__opensans"><Link to="/Kitchen">Our Kitchen</Link></li>
+            </div>
+          )}
+        </li>
+        <li className="p__opensans" onClick={() => {setMenuOpen(false); setAboutOpen(false);}}><Link to="/team">Our Team</Link></li>
+        <li className="p__opensans" onClick={() => {handleMenuClick(); setAboutOpen(false);}}>
           Menu
           { menuOpen && (
             <div className="app__navbarmenu_open">
-              <li className="app__p__opensans"><Link to="/menu">Dine In</Link></li>
+              <li className="app__p__opensans"><Link to="/menu">Menu</Link></li>
               <li className="app__p__opensans"><Link to="/ToGo">To Go</Link></li>
             </div>
           )}
         </li>
-        <li className="p__opensans" onClick={() => {setMenuOpen(false);}}><Link to ="/awards">Awards</Link></li>
+        <li className="p__opensans" onClick={() => {setMenuOpen(false); setAboutOpen(false);}}><Link to ="/awards">Awards</Link></li>
         <li className="p__opensans">
           <Link to="/" onClick={(e) => { e.preventDefault(); handleScrollToSection('contact'); }}>Contact</Link>
         </li>

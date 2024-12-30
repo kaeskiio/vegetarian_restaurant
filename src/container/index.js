@@ -12,6 +12,7 @@ import TastingMenu from './TastingMenu/TastingMenu';
 import Team from './Team/Team';
 import Specials from './Specials/Specials';
 import ToGo from './ToGo/ToGo';
+import Kitchen from './Kitchen/Kitchen';
 
 export {
   AboutUs,
@@ -28,4 +29,5 @@ export {
   Team,
   Specials,
   ToGo,
+  Kitchen,
 };

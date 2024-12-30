@@ -1,0 +1,56 @@
+.app__Kitchen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__Kitchen-Header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__Kitchen-content{
+    display: flex;
+    margin: 4rem 4rem;
+    flex-direction: column;
+    width: 60%;
+}
+
+.app__Kitchen-veggies{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.app__Kitchen-Tonburi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top:30px;
+}
+
+.app__Kitchen-Innovation{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.app__Kitchen-tofu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    margin-top:30px;
+}
