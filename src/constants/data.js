@@ -82,11 +82,7 @@ const awards = [
     title: 'World’s 50 Best Restaurants',
     subtitle: 'The world’s top dining experiences.',
   },
-  {
-    imgUrl: images.award04,
-    title: 'Best New Restaurant',
-    subtitle: 'Premier standout restaurants in America.',
-  },
+  
 ];
 
 
