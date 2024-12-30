@@ -20,7 +20,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Discovering Ali's Farm</h2>
             <p>
-              Nestled in the heart of the countryside, <strong>Ali's Farm</strong> became our inspiration. Their meticulous care for the environment and unmatched quality of black basil left us in awe.
+              Nestled in the heart of the countryside, <strong>Ali's Farm</strong> is the basis for our restaurant. Their use of sustainable farming practices and unmatched quality of black basil left us in awe. 
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Building a Lasting Partnership</h2>
             <p>
-              We formed a collaboration with Ali's Farm, ensuring that every batch of black basil aligns with our high standards. Together, we work towards a shared goal of sustainability.
+              We formed a collaboration with Ali's Farm, ensuring that every batch of black basil aligns with our high standards. Together, we work towards a shared goal of providing hearty meals that preserve our environment.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Farm-Fresh Logistics</h2>
             <p>
-              Through precise harvesting and eco-friendly transportation methods, black basil travels directly from Ali's Farm to our kitchen, ensuring freshness in every leaf.
+              Through precise harvesting, sustainable farming, and eco-friendly transportation methods, black basil travels directly from Ali's Farm to our kitchen, ensuring freshness in every leaf.
             </p>
           </div>
         </div>

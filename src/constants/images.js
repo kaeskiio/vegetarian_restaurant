@@ -30,6 +30,16 @@ import gallery1 from '../assets/gallery1.jpg';
 import gallery2 from '../assets/gallery2.png';
 import gallery3 from '../assets/gallery3.webp';
 import gallery4 from '../assets/gallery4.jpg';
+import Kitchen from '../assets/Kitchen.webp';
+import tofu1 from '../assets/tofu1.jpg';
+import tofu2 from '../assets/tofu2.avif';
+import tonburi1 from '../assets/tonburi1.jpg';
+import tonburi2 from '../assets/tonburi2.jpg';
+import plant1 from '../assets/plant1.avif';
+import plant2 from '../assets/plant2.jpeg';
+import plant3 from '../assets/plant3.webp';
+import plant4 from '../assets/plant4.webp';
+
 
 export default {
   B,
@@ -64,4 +74,13 @@ export default {
   gallery2,
   gallery3,
   gallery4,
+  Kitchen,
+  tofu1,
+  tofu2,
+  tonburi1,
+  tonburi2,
+  plant1,
+  plant2,
+  plant3,
+  plant4,
 };
