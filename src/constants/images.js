@@ -27,6 +27,10 @@ import christmas from '../assets/christmas.png';
 import catering from '../assets/catering.png';
 import ToGo from '../assets/ToGo.png';
 import egg from '../assets/egg.jpg';
+import gallery1 from '../assets/gallery1.jpg';
+import gallery2 from '../assets/gallery2.png';
+import gallery3 from '../assets/gallery3.webp';
+import gallery4 from '../assets/gallery4.jpg';
 
 export default {
   B,
@@ -58,4 +62,8 @@ export default {
   catering, 
   ToGo,
   egg,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
 };

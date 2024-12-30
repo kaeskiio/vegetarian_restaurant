@@ -10,7 +10,7 @@ const TastingMenu = () => (
   <div className = "app__TastingMenu flex__center section__padding" id = "tastingmenu">
     <FadeInSection>
     <div className = "app__TastingMenu-title">
-      <h1 className ="headtext__cormorant">Daily Menu</h1>
+      <h1 className ="headtext__cormorant">Tasting Menu</h1>
       <SubHeading title="Today's Selection"></SubHeading>
     </div>
     <div className="app__TastingMenu-FullMenu">
