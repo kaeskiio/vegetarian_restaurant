@@ -54,7 +54,7 @@ const ToGo = () => {
                                 <div className="app__description">
                                     <p className="app__specialMenu-menu_heading" style={{fontSize: "30px", lineHeight: '2rem'}}>{item.name}</p>
                                     <p className="p__cormorant">{item.description}</p>
-                                    <p className="p__cormorant">$ {item.price.toFixed(2)}</p>
+                                    <p className="p__cormorant">${item.price.toFixed(2)}</p>
                                 </div>
                                 <button
                                     onClick={() => handleAddToCart(item, index)}

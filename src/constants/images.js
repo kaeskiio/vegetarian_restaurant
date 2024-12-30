@@ -15,7 +15,6 @@ import laurels from '../assets/laurels.png';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
-import award04 from '../assets/award04.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import blackbasil from '../assets/blackbasil.png';
@@ -60,7 +59,6 @@ export default {
   award01,
   award02,
   award03,
-  award04,
   sign,
   quote,
   blackbasil,
