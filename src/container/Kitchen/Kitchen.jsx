@@ -37,7 +37,7 @@ const Kitchen = () => {
                 </FadeInSection>
                 <FadeInSection>
                     <p className="p__cormorant" style={{fontSize: '25px', textTransform: 'none', margin:'3rem 0'}}>
-                        Chef Joshua Wu is responsible for making our very own tofu from scratch using his family's generational recipe. Chef Wu uses locally-sourced soybeans to create delicious tofu that is both delicious and packed with nutrients. 
+                        Chef Joshua Wu is responsible for making our very own tofu from scratch using his family's generational recipe. Chef Wu uses locally-sourced soybeans to create tofu that is both delicious and packed with nutrients. 
                     </p>
                 </FadeInSection>
                 <FadeInSection>
