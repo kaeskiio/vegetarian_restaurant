@@ -182,6 +182,11 @@ const TakeOut = [
     name: "Butternut Squash & Sage Ravioli",
     description: "Homemade ravioli filled with a smooth butternut squash and sage mixture, served in a brown butter sauce with toasted pine nuts and fresh parmesan.",
     price: 16.75
+  },
+  {
+    name: "Mediterranean Harvest Bowl",
+    description: "A layered bowl of lemon-herb quinoa, roasted red peppers, and spiced chickpeas, served with a side of warm pita bread.",
+    price: 16.75
   }
 ];
 

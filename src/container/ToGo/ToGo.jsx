@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import './ToGo.css';
 import { images, data } from '../../constants';
+import FadeInSection from '../../components/FadeInSection/FadeInSection';
 
 const ToGo = () => {
     const [cart, setCart] = useState([]);
     const [cartOpen, setCartOpen] = useState(false);
     const [highlight, setHighlight] = useState(null);
+    const [cartEmpty, setCartEmpty] = useState(false);
+
+    useEffect(() => {
+        setCartEmpty(cart.length === 0);
+    }, [cart]);
 
     const handleViewCart = () => {
         setCartOpen(!cartOpen);
@@ -27,30 +33,38 @@ const ToGo = () => {
 
     return (
         <div className="app__ToGo" id="ToGo">
-            <div className="app__ToGo-title">
-                <h1 className="headtext__cormorant">Our Offerings</h1>
-            </div>
-            <div className="app__ToGo-image">
-                <img src={images.ToGo} alt="ToGo" />
-            </div>
-            <h1 className="app__specialMenu-menu_heading">Courses</h1>
+            <FadeInSection translateYAmount={30}>
+                <div className="app__ToGo-title">
+                    <h1 className="headtext__cormorant">Our Offerings</h1>
+                </div>
+            </FadeInSection>
+            <FadeInSection translateYAmount={30}>
+                <div className="app__ToGo-image">
+                    <img src={images.ToGo} alt="ToGo" />
+                </div>
+            </FadeInSection>
+            <FadeInSection>
+                <h1 className="app__specialMenu-menu_heading">Courses</h1>
+            </FadeInSection>
             <div className="app__ToGo-food">
                 <div className="app__ToGo-fooditems">
                     {data.TakeOut.map((item, index) => (
                         <div key={item.name + index} className="app__ToGo-item">
-                            <button
-                                onClick={() => handleAddToCart(item, index)}
-                                className={`app__ToGo-addToCartButton ${
-                                    highlight === index ? 'highlight' : ''
-                                }`}
-                            >
-                                <p className="p__cormorant">Add</p>
-                            </button>
-                            <div className="app__description">
-                                <p className="app__specialMenu-menu_heading">{item.name}</p>
-                                <p className="p__cormorant">{item.description}</p>
-                                <p className="p__cormorant">$ {item.price.toFixed(2)}</p>
-                            </div>
+                            <FadeInSection>
+                                <div className="app__description">
+                                    <p className="app__specialMenu-menu_heading" style={{fontSize: "30px", lineHeight: '2rem'}}>{item.name}</p>
+                                    <p className="p__cormorant">{item.description}</p>
+                                    <p className="p__cormorant">$ {item.price.toFixed(2)}</p>
+                                </div>
+                                <button
+                                    onClick={() => handleAddToCart(item, index)}
+                                    className={`app__ToGo-addToCartButton ${
+                                        highlight === index ? 'highlight' : ''
+                                    }`}
+                                >
+                                    <p className="p__cormorant">Add</p>
+                                </button>
+                            </FadeInSection>
                         </div>
                     ))}
                 </div>
@@ -64,6 +78,18 @@ const ToGo = () => {
                         <h1 className="headtext__cormorant" style={{ fontSize: '40px' }}>
                             My Cart
                         </h1>
+                        { cartEmpty && (
+                            <p className="p__cormorant"
+                                style={{
+                                fontSize: '15px',
+                                lineHeight: '1rem',
+                                width: '100%',
+                                textAlign: 'center',
+                                color: '#FFECB3',
+                            }}>
+                                Your cart is empty, just like life without Black Basil
+                            </p>
+                        )}
                         <div className="app__cart-items">
                             {cart.map((item, index) => (
                                 <div

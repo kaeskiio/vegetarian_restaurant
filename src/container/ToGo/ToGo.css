@@ -48,9 +48,11 @@
 
 .app__ToGo-fooditems{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: left;
     width:80%;
+    flex-wrap: wrap; /* Enables wrapping to the next row */
+    gap: 16px;       /* Adds spacing between items */
 }
 
 .app__checkbox{
@@ -67,7 +69,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    width: 400px;
+    height: 400px;
+    border: 4px solid var(--color-golden);
+    border-radius: 6px;
+}
+.app__ToGo-item:hover{
+    width:410px;
+    height:410px;
+    background-color:#555;
 }
   
 .app__ToGo-item-label {
@@ -174,7 +184,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    width:70%;
+    width:90%;
 }
 
 .app__cart {
@@ -195,7 +205,7 @@
 }
 
 .app__cart.open {
-    right: 0px; /* Bring it into view when open */
+    right: 0; /* Bring it into view when open */
 }
 
 .app__cart-items {
