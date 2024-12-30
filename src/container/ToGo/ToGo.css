@@ -75,6 +75,12 @@
     border-radius: 6px;
 }
 
+.app__ToGo-item:hover{
+    width: 410px;
+    height: 410px;
+    background-color: #555;
+}
+
   
 .app__ToGo-item-label {
     margin-left: 10px;
@@ -181,6 +187,7 @@
     text-align: center;
     flex-direction: column;
     width:90%;
+    margin-top: 1rem;
 }
 
 .app__cart {
