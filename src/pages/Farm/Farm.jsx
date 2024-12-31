@@ -68,17 +68,26 @@ const Farm = () => {
         </div>
       </div>
       <div className="app__farm-info">
-        <h2 className="app__farm-info-title">About Ali's Farm</h2>
+        <h2 className="app__farm-info-title">Discover the Heart of Sustainability</h2>
         <p className="app__farm-info-text">
-          Ali's Farm is a local, sustainable farm specializing in the cultivation of high-quality, organic black basil. Situated in the heart of the countryside, the farm practices eco-friendly methods and believes in giving back to nature.
+          Ali's Farm is more than a source of exceptional black basil—it's a philosophy of sustainability, quality, and community. 
+          Nestled in lush countryside landscapes, the farm employs regenerative farming techniques that enrich the soil, conserve water, 
+          and create a haven for biodiversity. Their commitment to zero chemical use and renewable energy ensures that every plant is 
+          cultivated with care and precision.
+        </p>
+        <p className="app__farm-info-text">
+          Beyond farming, Ali's Farm is a beacon for community empowerment. They host educational workshops to promote sustainable 
+          agriculture, ensuring that knowledge grows alongside their crops. By choosing Ali's Farm, you're supporting a vision of a 
+          greener, healthier planet.
         </p>
         <div className="app__farm-info-location">
           <a href="https://www.google.com/maps/place/Ali%E2%80%99s+Farm/@29.5242093,-95.3598038,17z/data=!3m1!4b1!4m6!3m5!1s0x86409384fb9dfc5f:0x645a223f3014a21!8m2!3d29.5242093!4d-95.3572289!16s%2Fg%2F11h6t7nt77?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-            <button className="app__farm-info-map-btn">View on Google Maps</button>
+            <button className="app__farm-info-map-btn">Explore on Google Maps</button>
           </a>
           <p className="app__farm-info-address">3946 Bellini Rd, Manvel, TX 77578</p>
         </div>
-      </div>    
+      </div>
+  
     </div>
   );
 };
