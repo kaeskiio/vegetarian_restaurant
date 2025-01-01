@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Specials.css';
-import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import FadeInSection from '../../components/FadeInSection/FadeInSection';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
@@ -25,7 +24,6 @@ const eventData = [
 
 const Specials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,7 +32,6 @@ const Specials = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   const handleArrowClick = (direction) => {
     if (direction === 'left') {
@@ -45,7 +42,7 @@ const Specials = () => {
   };
 
   return (
-    <div className={`app__Specials ${darkMode ? 'dark' : ''}`} id="Specials">
+    <div className={`app__Specials`} id="Specials">
       <FadeInSection>
         <div className="app__Specials-title">
           <h1 className="headtext__cormorant">Special Events & More</h1>

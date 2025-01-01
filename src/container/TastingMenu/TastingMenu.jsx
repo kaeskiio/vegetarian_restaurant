@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {SubHeading, MenuItem } from '../../components'
-import { images, data } from '../../constants';
+import {SubHeading, } from '../../components'
+import { data } from '../../constants';
 import './TastingMenu.css';
 import FadeInSection from '../../components/FadeInSection/FadeInSection';
 import Course from '../../components/Course/Course';
