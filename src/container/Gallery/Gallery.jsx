@@ -30,7 +30,10 @@ const Gallery = () => {
           {[images.gallery1, images.gallery2, images.gallery3, images.gallery4].map((image, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
               <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
+              <BsInstagram 
+                className="gallery__image-icon" 
+                onClick={() => window.open('https://www.instagram.com/the.blackbasil', '_blank')} 
+              />            
             </div>
           ))}
         </div>

@@ -55,7 +55,15 @@
     opacity: 0;
     transition: .5s ease;
     cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+
 }
+  
+  .gallery__image-icon:hover {
+    transform: scale(1.2); 
+    color: var(--color-golden);
+
+  }
 
 .app__gallery-images_card img {
     width: 100%;

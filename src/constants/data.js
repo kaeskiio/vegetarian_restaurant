@@ -88,12 +88,12 @@ const awards = [
 
 const FullMenu = [
   {
-    name: "Amuse-Bouche: Midnight Basil Consommé Sphere",
-    description: "A clear black basil consommé encapsulated in a delicate black gel sphere, served with micro purple basil and smoked sea salt.",
+    name: "Amuse-Bouche: Tonburi and Pea Harmony",
+    description: "A vibrant presentation of fresh peas and tonburi seeds (land caviar), served over ice. Complemented by crisp lettuce leaves adorned with thinly sliced vegetables.",
   },
   {
-    name: "First Course: Heirloom Beet and Tonburi Tartare",
-    description: "Finely diced heirloom beets paired with tonburi ('land caviar'), dressed in a mustard vinaigrette, and served with crispy sourdough shards.",
+    name: "First Course: Tomato and Herb Mosaic",
+    description: "A vibrant tartare of sun-ripened tomatoes, delicately seasoned and sprinkled with edible flowers and fresh herbs. Finished with crispy brioche crumbs and a hint of citrus essence for a perfect balance of texture and flavor.",
   },
   {
     name: "Second Course: Silken Tofu Mosaic",
@@ -116,7 +116,7 @@ const FullMenu = [
     description: "Smoked tofu cubes served with sautéed wild mushrooms, crispy shallots, and a thyme-infused soy reduction.",
   },
   {
-    name: "Seventh Course: Palate Cleanser – Cucumber Lime Granita",
+    name: "Seventh Course: Palate Cleanser - Cucumber Lime Granita", 
     description: "A refreshing granita made from cucumber juice, lime, and a hint of mint, served in a chilled martini glass.",
   },
   {
