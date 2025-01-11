@@ -1,9 +1,12 @@
-.app__ToGo{
-    display:flex;
-    flex-direction:column;
+.app__ToGo {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-black)
+    background-color: var(--color-black);
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
 }
 
 .app__ToGo-title{
@@ -43,18 +46,17 @@
     font-weight: 600;
     font-size: 45px;
     color: var(--color-golden);
-    margin-bottom: 1rem;  /* Add space between title and description */
+    margin-bottom: 1rem; 
 }
 
-.app__ToGo-fooditems{
+.app__ToGo-fooditems {
     display: flex;
     flex-direction: row;
-    text-align: left;
-    width:80%;
-    flex-wrap: wrap; /* Enables wrapping to the next row */
-    gap: 16px;       /* Adds spacing between items */
+    justify-content: center; 
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 16px;
 }
-
 .app__checkbox{
     width: 25px; 
     height: 25px; 
@@ -89,8 +91,9 @@
   /*Buttons*/
 .app__ToGo-addToCartButton {
     display:flex;
-    margin: 20px 2rem;
+    position: absolute;
     padding: 10px 20px;
+    margin-top: 80%;
     width:80px;
     background-color: var(--color-golden);
     color: #fff;
@@ -109,9 +112,9 @@
 }
 
 .app__ViewCartButton{
-    position: fixed; /* Keeps it fixed in the viewport */
-    right: 20px; /* Distance from the right edge */
-    top: 80px; /* Distance from the top edge */
+    position: fixed; 
+    right: 20px; 
+    top: 80px;
     z-index: 1000; 
     display:flex;
     margin-top: 20px;
@@ -124,7 +127,7 @@
 }
 
 .app__ViewCartButton:hover {
-    background-color: #555; /* Change color on hover */
+    background-color: #555; 
 }
 
 .app__remove{
@@ -193,7 +196,7 @@
 .app__cart {
     position: fixed;
     flex-direction: column;
-    right: -350px; /* Initially off-screen */
+    right: -350px; 
     top: 0px;
     z-index: 1001;
     background-color: rgb(36, 32, 32);
@@ -201,25 +204,25 @@
     border-radius: 5px;
     width: 350px;
     height: 100vh;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+    transition: right 0.3s ease-in-out; 
 }
 
 .app__cart.open {
-    right: 0; /* Bring it into view when open */
+    right: 0;
 }
 
 .app__cart-items {
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: calc(100vh - 200px); /* Adjust height for total and buttons */
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
     padding-bottom: 10px;
 }
 
 .app__cart-total {
-    position: sticky; /* Keeps the total fixed */
-    bottom: 70px; /* Position above the buttons */
+    position: sticky; 
+    bottom: 70px; 
     background-color: rgb(36, 32, 32);
     padding: 10px 0;
     font-size: 18px;
@@ -235,7 +238,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: calc(100% - 40px); /* Adjust for padding */
+    width: calc(100% - 40px); 
 }
 
 
@@ -300,10 +303,17 @@
 
     .app__ToGo-addToCartButton {
         width: auto;
-        padding: 8px 16px;
-        font-size: 14px;
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        position: relative;
+        background-color: var(--color-golden);
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
     }
-
     .app__ViewCartButton {
         padding: 12px 20px;
         font-size: 14px;
