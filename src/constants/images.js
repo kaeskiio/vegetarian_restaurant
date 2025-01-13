@@ -39,6 +39,14 @@ import plant1 from '../assets/plant1.avif';
 import plant2 from '../assets/plant2.jpeg';
 import plant3 from '../assets/plant3.webp';
 import plant4 from '../assets/plant4.webp';
+import header_image1 from '../assets/header_image1.jpg';
+import header_image2 from '../assets/header_image2.webp';
+import header_image3 from '../assets/header_image3.jpg';
+import header_image4 from '../assets/header_image4.jpg';
+import header_image5 from '../assets/header_image5.jpg';
+import header_image6 from '../assets/header_image6.png';
+import header_image7 from '../assets/header_image7.webp';
+import header_image8 from '../assets/header_image8.jpg';
 
 
 export default {
@@ -83,4 +91,12 @@ export default {
   plant2,
   plant3,
   plant4,
+  header_image1,
+  header_image2,
+  header_image3,
+  header_image4,
+  header_image5,
+  header_image6,
+  header_image7,
+  header_image8,
 };

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Header.css';
+import { BiFontSize } from 'react-icons/bi';
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +45,7 @@ const Header = () => {
 
       <div className="app__wrapper_img">
         <img
-          src={images.header_image}
+          src={images.header_image5}
           alt="header_img"
           className="header__image"
         />

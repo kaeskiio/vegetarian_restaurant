@@ -51,9 +51,18 @@
   }
   
   .header__image {
-    max-width: 100%;
+    width: 100%;
     animation: slideInRight 2s ease-out forwards;
     opacity: 0;
+  }
+
+  .app__wrapper_img{
+    width:100%;
+  }
+
+  .app__wrapper_img img{
+    width: 700px;
+    height: 800x;
   }
   
   @keyframes fadeInUp {
