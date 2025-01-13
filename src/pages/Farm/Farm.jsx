@@ -20,7 +20,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Discovering Ali's Farm</h2>
             <p>
-              Nestled in the heart of the countryside, <strong>Ali's Farm</strong> is the basis for our restaurant. Their use of sustainable farming practices and unmatched quality of black basil left us in awe. Since 2015 Ali's Farm has taken on significant measures to promote sustainability in agriculture, among which include crop rotation and cover cropping. Crops are rotated seasonally and planted on demand in order maintain the nutrients in the soil, prevent soil erosion, and limit food waste. In addition, Ali's farm features almost no chemical products in their farming process. All fertilizers, herbicides, and pesticides are organic to limit chemical runoff in our environment. 
+              Nestled in the heart of the countryside, <strong>Ali's Farm</strong> is the basis for our restaurant. Their use of sustainable farming practices and unmatched quality of black basil left us in awe. Since 2015, Ali's Farm has taken on significant measures to promote sustainability in agriculture, among which include crop rotation and cover cropping. Crops are rotated seasonally and planted on demand in order maintain the nutrients in the soil, prevent soil erosion, and limit food waste. In addition, Ali's farm features almost no chemical products in their farming process. All fertilizers, herbicides, and pesticides are organic to limit chemical runoff in our environment. 
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Building a Lasting Partnership</h2>
             <p>
-              We formed a collaboration with Ali's Farm in 2020, during the midst of the globalwide pandemic. With a mindset and passion which directly aligned with our goals, Ali's Farm's owner, Ayyan Rehman, eagerly offered to work with us to further spread the message of eco friendly farming and dining. We named our restaurant "Black Basil" in honor of the unique and delightful black basil that Ali's farm produces. In fact, many of our dishes center around the black basil as it adds a sophisticated flavor which elevates the experience.
+              We formed a collaboration with Ali's Farm in 2020, during the midst of the globalwide pandemic. With a mindset and passion which directly aligned with our goals, Ali's Farm's owner, Ayyan Rehman, eagerly offered to work with us to further spread the message of eco-friendly farming and dining. We named our restaurant "Black Basil" in honor of the unique and delightful black basil that Ali's farm produces. In fact, many of our dishes center around the black basil as it adds a sophisticated flavor which elevates your dining experience.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Farm = () => {
           <div className="timeline-content">
             <h2>Farm-Fresh Logistics</h2>
             <p>
-              Through precise harvesting, sustainable farming, and eco-friendly transportation methods, fresh produce travels directly from Ali's Farm to our kitchen, ensuring freshness in every leaf. Ali's farm utilizes GPS-guided drones and sensors to monitor the nutrient content, temperature, humitidty of soil, effectively guiding real-time adjustments to irrigation and fertilization. Once the produce has been harvested, it is directly transported to Black Basil through electric vehicles with solar powered referigeration systems, limiting the release of greenhouse gases. Any left over produce is then sold at the local farmer's market or donated to soup kitchens to prevent food wastage.
+              Through precise harvesting, sustainable farming, and eco-friendly transportation methods, fresh produce travels directly from Ali's Farm to our kitchen, ensuring freshness in every leaf. Ali's farm utilizes GPS-guided drones and sensors to monitor the nutrient content, temperature, and humitidty of the soil, effectively guiding real-time adjustments to irrigation and fertilization. Once the produce has been harvested, it is directly transported to Black Basil through electric vehicles with solar powered referigeration systems, limiting the release of greenhouse gases. Any left over produce is then sold at the local farmer's market or donated to soup kitchens to prevent food wastage.
             </p>
           </div>
         </div>
