@@ -55,6 +55,12 @@ import course6 from '../assets/course6.jpg';
 import course7 from '../assets/course7.png';
 import course8 from '../assets/course8.png';
 import course9 from '../assets/course9.jpg';
+import dessert1 from '../assets/dessert1.jpg';
+import dessert2 from '../assets/dessert2.jpg';
+import dessert3 from '../assets/dessert3.jpg';
+import dessert4 from '../assets/dessert4.jpg';
+import dessert5 from '../assets/dessert5.jpg';
+import dessert6 from '../assets/dessert6.jpg';
 
 
 export default {
@@ -115,4 +121,10 @@ export default {
   course7,
   course8,
   course9,
+  dessert1,
+  dessert2, 
+  dessert3,
+  dessert4, 
+  dessert5,
+  dessert6,
 };

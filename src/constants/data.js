@@ -134,25 +134,25 @@ const TakeOut = [
   {
     name: "Grilled Vegetable & Halloumi Skewers",
     description: "A selection of colorful vegetables and rich halloumi cheese grilled to perfection, drizzled with a balsamic glaze and served with a side of herb-infused couscous.",
-    price: 14.99,
+    price: 30.99,
     calories: '| 650 calories',
   },
   {
     name: "Wild Mushroom Risotto",
     description: "Creamy risotto made with a blend of wild mushrooms, finished with a touch of white truffle oil and grated parmesan for an earthy and luxurious flavor.",
-    price: 18.49,
+    price: 29.99,
     calories: '| 800 calories',
   },
   {
     name: "Smoked Carrot & Beetroot Tartare",
     description: "A vibrant tartare of finely diced smoked carrots and roasted beets, complemented by a tangy mustard dressing and served with crispy black sesame crackers.",
-    price: 12.75,
+    price: 25.75,
     calories: '| 500 calories',
   },
   {
     name: "Crispy Cauliflower Steak",
     description: "A golden-brown cauliflower steak, seasoned with turmeric and cumin, topped with a mint yogurt sauce and served with a side of sautéed spinach and roasted cherry tomatoes.",
-    price: 15.49,
+    price: 20.49,
     calories: '| 550 calories',
   },
   {
@@ -164,19 +164,19 @@ const TakeOut = [
   {
     name: "Lentil & Mushroom Wellington",
     description: "A vegetarian twist on the classic Wellington, featuring a savory lentil and wild mushroom filling wrapped in flaky puff pastry and served with a rich red wine reduction.",
-    price: 19.99,
+    price: 26.99,
     calories: '| 850 calories',
   },
   {
     name: "Butternut Squash & Sage Ravioli",
     description: "Homemade ravioli filled with a smooth butternut squash and sage mixture, served in a brown butter sauce with toasted pine nuts and fresh parmesan.",
-    price: 16.75,
+    price: 25.75,
     calories: '| 770 calories',
   },
   {
     name: "Mediterranean Harvest Bowl",
     description: "A layered bowl of lemon-herb quinoa, roasted red peppers, and spiced chickpeas, served with a side of warm pita bread.",
-    price: 16.75,
+    price: 20.75,
     calories: '| 500 calories',
   }
 ];
@@ -185,30 +185,38 @@ const Dessert = [
   {
     name: "Vegan Chocolate Tart",
     description: "A decadent chocolate tart with a smooth, rich vegan chocolate filling in a crisp pastry shell, topped with fresh raspberries and a dusting of cocoa powder.",
+    price: 15.75,
+    calories: '| 500 calories',
   },
   {
     name: "Lemon & Lavender Panna Cotta",
     description: "A delicate panna cotta infused with lemon and lavender, served with a fresh berry compote and a hint of vanilla bean.",
+    price: 19.95,
+    calories: '| 600 calories',
   },
   {
     name: "Tiramisu with Vegan Mascarpone",
     description: "A creamy, indulgent tiramisu made with layers of espresso-soaked ladyfingers, a rich vegan mascarpone cream, and dusted with cocoa powder.",
+    price: 20.25,
+    calories: '| 500 calories',
   },
   {
     name: "Pistachio & Rosewater Baklava",
     description: "Flaky, buttery layers of phyllo dough filled with crushed pistachios and scented with rosewater, drizzled with honey syrup for a sweet, aromatic finish.",
-  },
-  {
-    name: "Coconut & Mango Panna Cotta",
-    description: "A silky coconut panna cotta paired with a refreshing mango coulis, garnished with toasted coconut flakes and mint leaves.",
+    price: 20.25,
+    calories: '450 calories',
   },
   {
     name: "Raspberry & Almond Frangipane Tart",
     description: "A buttery almond frangipane filling in a crisp pastry shell, topped with fresh raspberries and finished with a light dusting of powdered sugar.",
+    price: 15.25,
+    calories: '400 calories',
   },
   {
     name: "Chocolate & Hazelnut Mousse",
     description: "A rich and velvety chocolate mousse with a hint of hazelnut, topped with chopped hazelnuts and a drizzle of caramel sauce.",
+    price: 16.49,
+    calories: '450 calories',
   },
 ]
 

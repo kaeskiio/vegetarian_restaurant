@@ -12,7 +12,9 @@ const ToGo = () => {
     const [itemView, setItemView] = useState(false);
     const [currentItem, setCurrentItem] = useState(null);
     const [index, setIndex] = useState(null);
+    const [dessert, setDessert] = useState(false);
     const urls = [images.course1, images.course2, images.course3, images.course5, images.course6, images.course7, images.course8, images.course9];
+    const dessertUrls = [images.dessert1, images.dessert2, images.dessert3, images.dessert4, images.dessert5, images.dessert6];
 
     useEffect(() => {
         setCartEmpty(cart.length === 0);
@@ -47,6 +49,7 @@ const ToGo = () => {
         setItemView(false);
         setIndex(null);
         setCurrentItem(null);
+        setDessert(false);
     }
 
     return (
@@ -88,6 +91,35 @@ const ToGo = () => {
                                                 </button>
                                             </div>
                                     </FadeInSection>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <FadeInSection>
+                        <h1 className="app__specialMenu-menu_heading" style = {{margin: '2rem 0'}}>Desserts</h1>
+                    </FadeInSection>
+                    <div className = 'app__ToGo-Dessert'>
+                        <div className = 'app__ToGo-Dessert-items'>
+                            {data.Dessert.map((item, index) => (
+                                <div key={item.name + index} className="app__ToGo-Dessert-item" onClick={() => {handleItemClicked(item, index); setDessert(true);}}>
+                                <FadeInSection>
+                                    <div className="app__dessert_description">
+                                        <img src={dessertUrls[index]}/>
+                                        <p className="app__specialMenu-menu_heading" style={{fontSize: "30px", lineHeight: '2rem', margin: '1rem'}}>{item.name}</p>
+                                    </div>
+                                    <div className = 'app__ToGo-dessert-description'>
+                                            <div style = {{margin: '0rem 0rem'}}><p className="p__cormorant">${item.price.toFixed(2)}</p></div>
+                                            <div style = {{margin: '0rem 1rem'}} className="p__cormorant">{item.calories}</div>
+                                            <button
+                                                onClick={(e) => {e.stopPropagation(); handleAddToCart(item, index);}}
+                                                className={`app__ToGo-addToCartButton ${
+                                                    highlight === index ? 'highlight' : ''
+                                                }`}
+                                            >
+                                                <p className="p__cormorant">Add</p>
+                                            </button>
+                                        </div>
+                                </FadeInSection>
                                 </div>
                             ))}
                         </div>
@@ -167,7 +199,7 @@ const ToGo = () => {
                                 <p className='p__cormorant' style ={{margin:'0 1rem', fontSize: '15px'}}>Back to Shopping</p>
                             </a>
                         </Link>
-                        <img className = 'app_menu_item-image' src = {urls[index]} alt ="menu item" style = {{
+                        <img className = 'app_menu_item-image' src = {dessert ? dessertUrls[index]: urls[index]} alt ="menu item" style = {{
                             width: '90%',
                             borderRadius: '8px',
                         }}/>
