@@ -67,7 +67,7 @@ const ToGo = () => {
                         </div>
                     </FadeInSection>
                     <FadeInSection>
-                        <h1 className="app__specialMenu-menu_heading">Courses</h1>
+                        <h1 className="app__specialMenu-menu_heading-Course" style={{}}>Courses</h1>
                     </FadeInSection>
                     <div className="app__ToGo-food">
                         <div className="app__ToGo-fooditems">
@@ -76,7 +76,7 @@ const ToGo = () => {
                                     <FadeInSection>
                                         <div className="app__description">
                                             <img src={urls[index]}/>
-                                            <p className="app__specialMenu-menu_heading" style={{fontSize: "30px", lineHeight: '2rem', margin: '1rem'}}>{item.name}</p>
+                                            <p className="app__specialMenu-menu_heading" style={{ lineHeight: '2rem', margin: '1rem'}}>{item.name}</p>
                                         </div>
                                         <div className = 'app__ToGo-item-description'>
                                                 <div style = {{margin: '0rem 0rem'}}><p className="p__cormorant">${item.price.toFixed(2)}</p></div>
@@ -96,7 +96,7 @@ const ToGo = () => {
                         </div>
                     </div>
                     <FadeInSection>
-                        <h1 className="app__specialMenu-menu_heading" style = {{margin: '2rem 0'}}>Desserts</h1>
+                        <h1 className="app__specialMenu-menu_heading-Dessert" style = {{}}>Desserts</h1>
                     </FadeInSection>
                     <div className = 'app__ToGo-Dessert'>
                         <div className = 'app__ToGo-Dessert-items'>
@@ -108,17 +108,17 @@ const ToGo = () => {
                                         <p className="app__specialMenu-menu_heading" style={{fontSize: "30px", lineHeight: '2rem', margin: '1rem'}}>{item.name}</p>
                                     </div>
                                     <div className = 'app__ToGo-dessert-description'>
-                                            <div style = {{margin: '0rem 0rem'}}><p className="p__cormorant">${item.price.toFixed(2)}</p></div>
-                                            <div style = {{margin: '0rem 1rem'}} className="p__cormorant">{item.calories}</div>
-                                            <button
-                                                onClick={(e) => {e.stopPropagation(); handleAddToCart(item, index);}}
-                                                className={`app__ToGo-addToCartButton ${
-                                                    highlight === index ? 'highlight' : ''
-                                                }`}
-                                            >
-                                                <p className="p__cormorant">Add</p>
-                                            </button>
-                                        </div>
+                                        <div style = {{margin: '0rem 0rem'}}><p className="p__cormorant">${item.price.toFixed(2)}</p></div>
+                                        <div style = {{margin: '0rem 1rem'}} className="p__cormorant">{item.calories}</div>
+                                        <button
+                                            onClick={(e) => {e.stopPropagation(); handleAddToCart(item, index);}}
+                                            className={`app__ToGo-addToCartButton ${
+                                                highlight === index ? 'highlight' : ''
+                                            }`}
+                                        >
+                                            <p className="p__cormorant">Add</p>
+                                        </button>
+                                    </div>
                                 </FadeInSection>
                                 </div>
                             ))}
@@ -200,12 +200,13 @@ const ToGo = () => {
                             </a>
                         </Link>
                         <img className = 'app_menu_item-image' src = {dessert ? dessertUrls[index]: urls[index]} alt ="menu item" style = {{
-                            width: '90%',
                             borderRadius: '8px',
                         }}/>
                     </div>
                     <div className = "app__menu_item_description">
-                        <p className = 'headtext__cormorant' style = {{fontSize:'50px', textAlign: 'left', lineHeight: '1.5'}}>{currentItem.name} </p>
+                        <div className = "app__menu_item_description-title">
+                            <p className = 'headtext__cormorant' style = {{ textAlign: 'left', lineHeight: '1.5'}}>{currentItem.name} </p>
+                        </div>
                         <p className = 'p__cormorant' style = {{margin: '2rem 0', textAlign: 'left', color: 'lightgrey'}}>${currentItem.price} {currentItem.calories}</p>
                         <p className = 'p__cormorant' style = {{margin: '1rem 0', textAlign: 'left', lineHeight: '1.5', color: 'lightgrey'}}>{currentItem.description}</p>
                         <button
@@ -215,7 +216,7 @@ const ToGo = () => {
                             }`}
                             style={{width:'250px', margin: '1rem 0'}}
                         >
-                            <p className = 'p__cormorant' style={{fontSize:'25'}}>Add To Bag | ${currentItem.price}
+                            <p className = 'p__cormorant' style={{fontSize:'25'}}>Add To Cart | ${currentItem.price}
                             </p>
                         </button>
                     </div>
