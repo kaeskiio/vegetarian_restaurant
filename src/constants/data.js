@@ -134,47 +134,50 @@ const TakeOut = [
   {
     name: "Grilled Vegetable & Halloumi Skewers",
     description: "A selection of colorful vegetables and rich halloumi cheese grilled to perfection, drizzled with a balsamic glaze and served with a side of herb-infused couscous.",
-    price: 14.99
+    price: 14.99,
+    calories: '| 650 calories',
   },
   {
     name: "Wild Mushroom Risotto",
     description: "Creamy risotto made with a blend of wild mushrooms, finished with a touch of white truffle oil and grated parmesan for an earthy and luxurious flavor.",
-    price: 18.49
+    price: 18.49,
+    calories: '| 800 calories',
   },
   {
     name: "Smoked Carrot & Beetroot Tartare",
     description: "A vibrant tartare of finely diced smoked carrots and roasted beets, complemented by a tangy mustard dressing and served with crispy black sesame crackers.",
-    price: 12.75
-  },
-  {
-    name: "Stuffed Zucchini Flowers",
-    description: "Delicate zucchini flowers filled with herbed ricotta, lightly battered and fried, served with a lemon-basil aioli for a crispy, savory treat.",
-    price: 16.99
+    price: 12.75,
+    calories: '| 500 calories',
   },
   {
     name: "Crispy Cauliflower Steak",
     description: "A golden-brown cauliflower steak, seasoned with turmeric and cumin, topped with a mint yogurt sauce and served with a side of sautéed spinach and roasted cherry tomatoes.",
-    price: 15.49
+    price: 15.49,
+    calories: '| 550 calories',
   },
   {
     name: "Vegan Truffle Mac 'n' Cheese",
     description: "A rich, creamy vegan cheese sauce made with cashews and nutritional yeast, combined with al dente pasta and finished with a drizzle of black truffle oil.",
-    price: 17.25
+    price: 17.25,
+    calories: '| 700 calories',
   },
   {
     name: "Lentil & Mushroom Wellington",
     description: "A vegetarian twist on the classic Wellington, featuring a savory lentil and wild mushroom filling wrapped in flaky puff pastry and served with a rich red wine reduction.",
-    price: 19.99
+    price: 19.99,
+    calories: '| 850 calories',
   },
   {
     name: "Butternut Squash & Sage Ravioli",
     description: "Homemade ravioli filled with a smooth butternut squash and sage mixture, served in a brown butter sauce with toasted pine nuts and fresh parmesan.",
-    price: 16.75
+    price: 16.75,
+    calories: '| 770 calories',
   },
   {
     name: "Mediterranean Harvest Bowl",
     description: "A layered bowl of lemon-herb quinoa, roasted red peppers, and spiced chickpeas, served with a side of warm pita bread.",
-    price: 16.75
+    price: 16.75,
+    calories: '| 500 calories',
   }
 ];
 

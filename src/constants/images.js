@@ -44,9 +44,17 @@ import header_image2 from '../assets/header_image2.webp';
 import header_image3 from '../assets/header_image3.jpg';
 import header_image4 from '../assets/header_image4.jpg';
 import header_image5 from '../assets/header_image5.jpg';
-import header_image6 from '../assets/header_image6.png';
 import header_image7 from '../assets/header_image7.webp';
 import header_image8 from '../assets/header_image8.jpg';
+import course1 from '../assets/course1.jpg';
+import course2 from '../assets/course2.jpg';
+import course3 from '../assets/course3.jpg';
+import course4 from '../assets/course4.jpg';
+import course5 from '../assets/course5.png';
+import course6 from '../assets/course6.jpg';
+import course7 from '../assets/course7.png';
+import course8 from '../assets/course8.png';
+import course9 from '../assets/course9.jpg';
 
 
 export default {
@@ -96,7 +104,15 @@ export default {
   header_image3,
   header_image4,
   header_image5,
-  header_image6,
   header_image7,
   header_image8,
+  course1,
+  course2,
+  course3,
+  course4,
+  course5,
+  course6,
+  course7,
+  course8,
+  course9,
 };
