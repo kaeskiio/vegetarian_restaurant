@@ -102,6 +102,12 @@
     margin-bottom: 1rem; 
 }
 
+.app__specialMenu-menu_heading:hover {
+    color: var(--color-golden);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.);
+  }
+
 .app__ToGo-fooditems {
     display: flex;
     flex-direction: row;
@@ -166,6 +172,11 @@
     transition: all 0.4 ease-in-out;
 }
 
+.app__ToGo-addToCartButton:hover {
+    color: var(--color-golden);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.);
+  }
 .app__ToGo-addToCartButton.highlight {
     background-color: grey;
     border-color: grey;
@@ -409,7 +420,7 @@
     font-weight: 600;
     font-size: 45px;
     color: var(--color-golden);
-    margin: 1rem;
+    margin: 4rem;
 }
 
 .app_menu_item-image{
@@ -419,13 +430,30 @@
 }
 
 .back-button:hover {
-    background-color:gold;
-}
+    color: var(--color-golden);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.);
+  }
 
 .back-button span {
     margin-left: 8px;
 }
 
+@media (max-width: 1100px){
+    .app_menu_item-image{
+        display: flex;
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .app__menu_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app__menu_item_description{
+        padding-left: 1rem;
+    }
+}
 @media (max-width: 760px) {
     .app__ToGo-image img {
         width: 100%;
@@ -549,7 +577,7 @@
 
     .app_menu_item-image{
         display: flex;
-        width: 45vh;
+        width: 80vw;
         align-items: center;
         justify-content: center;
     }
@@ -563,7 +591,7 @@
         width: 100%;
         font-size: 30px;
         line-height:1px;
-        margin: 0rem 0rem;
+        margin: 5rem 0rem;
     }
 
     .app__ToGo-item-description{
@@ -575,5 +603,7 @@
     .app__ToGo-item{
         height: 470px;
         width: 100%;
+        margin: 0.2rem 0rem;
+
     }
 }

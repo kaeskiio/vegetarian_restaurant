@@ -4,6 +4,7 @@ import './Book.css';
 const Book = () => {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phone: '',
     date: '',
     time: '',
@@ -12,7 +13,7 @@ const Book = () => {
 
   const [reservations, setReservations] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
-  const [editIndex, setEditIndex] = useState(null); // To track which reservation is being edited
+  const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
     const savedReservations = localStorage.getItem('reservations');
@@ -33,6 +34,23 @@ const Book = () => {
     });
   };
 
+  const sendConfirmationEmail = async (email, reservationDetails) => {
+    try {
+      await fetch('https://your-backend-api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          to: email,
+          subject: 'Reservation Confirmation',
+          text: `Hi ${reservationDetails.name},\n\nYour table reservation is confirmed for ${reservationDetails.date} at ${reservationDetails.time} for ${reservationDetails.guests} guests.\n\nThank you!`,
+        }),
+      });
+      console.log('Email sent successfully');
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -40,7 +58,7 @@ const Book = () => {
       (reservation, index) =>
         reservation.date === formData.date &&
         reservation.time === formData.time &&
-        index !== editIndex // Exclude the currently edited reservation
+        index !== editIndex
     );
 
     if (isTimeTaken) {
@@ -49,19 +67,19 @@ const Book = () => {
       setErrorMessage('');
 
       if (editIndex !== null) {
-        // Update an existing reservation
         const updatedReservations = reservations.map((reservation, index) =>
           index === editIndex ? { ...formData } : reservation
         );
         setReservations(updatedReservations);
-        setEditIndex(null); // Reset edit mode
+        setEditIndex(null);
       } else {
-        // Add a new reservation
         setReservations([...reservations, { ...formData }]);
+        sendConfirmationEmail(formData.email, formData); // Send confirmation email
       }
 
       setFormData({
         name: '',
+        email: '',
         phone: '',
         date: '',
         time: '',
@@ -91,6 +109,15 @@ const Book = () => {
             name="name"
             placeholder="Your Name"
             value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="p__opensans"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
             onChange={handleChange}
             required
           />
@@ -142,6 +169,7 @@ const Book = () => {
             {reservations.map((reservation, index) => (
               <div key={index} className="reservation-box">
                 <h4>{reservation.name}</h4>
+                <p>Email: {reservation.email}</p>
                 <p>Phone: {reservation.phone}</p>
                 <p>Date: {reservation.date}</p>
                 <p>Time: {reservation.time}</p>

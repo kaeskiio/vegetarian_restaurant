@@ -52,10 +52,6 @@ body {
     cursor: pointer;
   }
   
-  .book-container button:hover {
-    background-color: var(--color-gray);
-  }
-  
   .reservations-list {
     margin-top: 20px;
     color: var(--color-white);
