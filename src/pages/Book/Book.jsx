@@ -11,7 +11,7 @@ const Book = () => {
     guests: 1,
   });
 
-  const [reservations, setReservations] = useState([]);
+  const [reservations, setReservations] =  useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [editIndex, setEditIndex] = useState(null);
 
