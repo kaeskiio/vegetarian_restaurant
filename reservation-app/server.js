@@ -3,17 +3,17 @@ const cors = require('cors');
 const { Pool } = require('pg');
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json());
 
 const pool = new Pool({
-  user: 'kacemettahali',
-  host: 'localhost',
-  database: 'reservations',
-  password: 'riotgames1',
-  port: 5432,
+  user: process.env.PG_USER,
+  host: process.env.PG_HOST,
+  database: process.env.PG_DATABASE,
+  password: process.env.PG_PASSWORD,
+  port: process.env.PG_PORT || 5432,
 });
 
 app.get('/api/reservations', async (req, res) => {
