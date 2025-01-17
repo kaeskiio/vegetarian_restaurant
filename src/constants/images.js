@@ -24,7 +24,6 @@ import negroni from '../assets/negroni.png';
 import dining from '../assets/dining.png';
 import christmas from '../assets/christmas.png';
 import catering from '../assets/catering.png';
-import ToGo from '../assets/ToGo.png';
 import egg from '../assets/egg.jpg';
 import gallery1 from '../assets/gallery1.jpg';
 import gallery2 from '../assets/gallery2.png';
@@ -61,6 +60,7 @@ import dessert3 from '../assets/dessert3.jpg';
 import dessert4 from '../assets/dessert4.jpg';
 import dessert5 from '../assets/dessert5.jpg';
 import dessert6 from '../assets/dessert6.jpg';
+import ToGo from '../assets/ToGo.jpg';
 
 
 export default {
