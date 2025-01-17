@@ -32,7 +32,7 @@ const Gallery = () => {
               <img src={image} alt="gallery_image" />
               <BsInstagram 
                 className="gallery__image-icon" 
-                onClick={() => window.open('https://www.instagram.com/the.blackbasil', '_blank')} 
+                onClick={() => window.open('https://www.instagram.com/blackbasilrist', '_blank')} 
               />            
             </div>
           ))}

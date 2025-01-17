@@ -23,7 +23,7 @@ const Footer = () => (
         <img src={images.spoon} alt="spoon" className="spoon__img" style = {{marginTop: 15}}/>
         <div className="app__footer-links_icons">
           <a 
-            href="https://www.instagram.com/the.blackbasil?igsh=MWNiNXNnMm5ka3UzNg%3D%3D&utm_source=qr" 
+            href="https://www.instagram.com/blackbasilrist" 
             target="_blank" 
             rel="noopener noreferrer"
           >

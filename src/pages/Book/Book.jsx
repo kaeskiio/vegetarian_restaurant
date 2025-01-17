@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 import './Book.css';
 
 const Book = () => {
@@ -11,7 +12,7 @@ const Book = () => {
     guests: 1,
   });
 
-  const [reservations, setReservations] =  useState([]);
+  const [reservations, setReservations] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [editIndex, setEditIndex] = useState(null);
 
@@ -34,21 +35,32 @@ const Book = () => {
     });
   };
 
-  const sendConfirmationEmail = async (email, reservationDetails) => {
-    try {
-      await fetch('https://your-backend-api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          to: email,
-          subject: 'Reservation Confirmation',
-          text: `Hi ${reservationDetails.name},\n\nYour table reservation is confirmed for ${reservationDetails.date} at ${reservationDetails.time} for ${reservationDetails.guests} guests.\n\nThank you!`,
-        }),
-      });
-      console.log('Email sent successfully');
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
+  const sendConfirmationEmail = (email, reservationDetails) => {
+    const templateParams = {
+      email: email,
+      name: reservationDetails.name,
+      date: reservationDetails.date,
+      time: reservationDetails.time,
+      guests: reservationDetails.guests,
+    };
+
+    emailjs
+      .send(
+        'service_aspd0dh', // Replace with your EmailJS service ID
+        'template_kkiexoc', // Replace with your EmailJS template ID
+        templateParams,
+        'iacFzb6XlnHl6k1gz' // Replace with your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Reservation confirmation email sent successfully!');
+        },
+        (err) => {
+          console.error('FAILED...', err);
+          alert('Failed to send confirmation email.');
+        }
+      );
   };
 
   const handleSubmit = (e) => {
@@ -74,7 +86,7 @@ const Book = () => {
         setEditIndex(null);
       } else {
         setReservations([...reservations, { ...formData }]);
-        sendConfirmationEmail(formData.email, formData); // Send confirmation email
+        sendConfirmationEmail(formData.email, formData); 
       }
 
       setFormData({

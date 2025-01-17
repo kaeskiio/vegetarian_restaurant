@@ -19,10 +19,10 @@ const Newsletter = () => {
 
     emailjs
       .send(
-        'service_aspd0dh', // Replace with your EmailJS service ID
-        'template_365etz8', // Replace with your EmailJS template ID
+        'service_aspd0dh', // EmailJS service ID
+        'template_365etz8', // EmailJS template ID
         templateParams,
-        'iacFzb6XlnHl6k1gz' // Replace with your EmailJS user ID
+        'iacFzb6XlnHl6k1gz' // EmailJS user ID
       )
       .then(
         (response) => {
