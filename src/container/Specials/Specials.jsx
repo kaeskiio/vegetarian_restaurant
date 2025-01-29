@@ -11,7 +11,7 @@ const eventData = [
     description: 'Our exclusive private dining rooms can host up to 30 guests. Perfect for intimate family reunions or team dinners.',
   },
   {
-    title: 'Christmas & New Year’s Eve Specials',
+    title: 'Christmas & New Year\'s Eve Specials',
     image: images.christmas,
     description: 'Celebrate the holidays with a 25% discount and a festive, luxurious dinner menu.',
   },

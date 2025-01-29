@@ -70,7 +70,10 @@
 
 .app__Specials-details {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app__specialMenu-menu_heading {
@@ -78,7 +81,7 @@
   font-weight: 600;
   font-size: 45px;
   color: var(--color-golden);
-  margin-bottom: 1rem;  /* Add space between title and description */
+  margin-bottom: 1rem;  
 }
 
 .app__p__cormorant {
@@ -132,5 +135,9 @@
 @media (max-width: 480px) {
   .gallery__arrow-icon {
     font-size: 35px;
+  }
+  .app__Specials-details h2{
+    line-height: 50px;
+    text-align: center;
   }
 }
