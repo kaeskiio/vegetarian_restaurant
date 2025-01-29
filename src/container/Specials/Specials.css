@@ -81,7 +81,6 @@
   font-weight: 600;
   font-size: 45px;
   color: var(--color-golden);
-  margin-bottom: 1rem;  
 }
 
 .app__p__cormorant {
@@ -136,8 +135,18 @@
   .gallery__arrow-icon {
     font-size: 35px;
   }
-  .app__Specials-details h2{
+  .app__Specials-details h1{
     line-height: 50px;
     text-align: center;
+    margin: 1rem;
+  }
+  .app__Special-details_heading{
+    height:80%;
+  }
+
+  .app__Specials-details p{
+    line-height: 35px;
+    text-align: center;
+    margin: 1rem;
   }
 }

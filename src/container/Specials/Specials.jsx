@@ -66,8 +66,8 @@ const Specials = () => {
       </div>
 
       <div className="app__Specials-details">
-        <h2 className="app__specialMenu-menu_heading">{eventData[currentSlide].title}</h2>
-        <p className="app__p__cormorant">{eventData[currentSlide].description}</p>
+          <h1 className="app__specialMenu-menu_heading">{eventData[currentSlide].title}</h1>
+          <p className="app__p__cormorant">{eventData[currentSlide].description}</p>
       </div>
 
       <div className="app__Specials-controls">
