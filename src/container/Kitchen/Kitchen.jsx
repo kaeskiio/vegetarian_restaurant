@@ -24,12 +24,12 @@ const Kitchen = () => {
             </FadeInSection>
           </div>
           <FadeInSection>
-            <p className="p__cormorant" style={{ textTransform: 'none', marginTop: '40px'}}>
+            <p className="p__cormorant" style={{ color: 'lightGrey', textTransform: 'none', marginTop: '40px'}}>
               Ali's farm delivers fresh, organic produce, including our signature Black Basil, every morning to ensure the best quality food for our guests while reducing food waste. Each morning, around 6:00 AM, we carefully prepare the fruits and vegetables—washing, cutting, and storing them to maintain freshness throughout the day.
             </p>
           </FadeInSection>
           <FadeInSection>
-            <p className="p__cormorant" style={{ textTransform: 'none', margin: '3rem 0'}}>
+            <p className="p__cormorant" style={{ color: 'lightGrey', textTransform: 'none', margin: '3rem 0'}}>
               Our restaurant offers a diverse selection of vegetables, both in taste and preparation. As an amuse-bouche, we often present a fresh array of seasonal vegetables to our guests, unseasoned and unprocessed, to allow them to experience the produce in its purest form.
             </p>
           </FadeInSection>
@@ -40,7 +40,7 @@ const Kitchen = () => {
             </div>
           </FadeInSection>
           <FadeInSection>
-            <p className="p__cormorant" style={{textTransform: 'none', margin:'3rem 0'}}>
+            <p className="p__cormorant" style={{ color: 'lightGrey', textTransform: 'none', margin:'3rem 0'}}>
               Chef Joshua Wu crafts our house-made tofu from scratch, following his family’s generational recipe. Using locally-sourced soybeans, Chef Wu creates tofu that is not only delicious but also rich in nutrients.
             </p>
           </FadeInSection>
@@ -51,7 +51,7 @@ const Kitchen = () => {
             </div>
           </FadeInSection>
           <FadeInSection>
-            <p className="p__cormorant" style={{textTransform: 'none', marginBottom:'3rem'}}>
+            <p className="p__cormorant" style={{ color: 'lightGrey', textTransform: 'none', marginBottom:'3rem'}}>
               To recreate the refined taste of caviar, Black Basil drew inspiration from Eleven Madison Park. We use fresh tonburi seeds, also known as "land caviar," to create an elegant dining experience that is both environmentally conscious and sophisticated.
             </p>
           </FadeInSection>
