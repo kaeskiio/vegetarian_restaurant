@@ -15,8 +15,9 @@ const FindUs = () => {
         <div className="app__wrapper-content">
           <p className="p__opensans">11850 Broadway Street, Pearland, TX, 77584</p>
           <p className="p__cormorant" style={{ color: '#DCCA87', margin: '2rem 0' }}>Opening Hours</p>
+          <p className = "p__opensans">Mon - Fri: 3:00PM-2:00AM</p>
+          <p className = "p__opensans">Sat - Sun: 6:00PM-2:00AM</p>
           <p className = "p__opensans">Takeout: Mon-Fri During Regular Hours</p>
-          <p className = "p__opensans">Dinner Service: 3:00PM-2:00AM</p>
         </div>
         <button
           type="button"
